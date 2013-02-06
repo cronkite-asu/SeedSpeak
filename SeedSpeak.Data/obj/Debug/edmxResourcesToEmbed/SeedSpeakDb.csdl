@@ -1,0 +1,1131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SeedSpeakDbModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="seedspeakdbEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Bookmarks" EntityType="SeedSpeakDbModel.Bookmark" />
+    <EntitySet Name="Categories" EntityType="SeedSpeakDbModel.Category" />
+    <EntitySet Name="Cities" EntityType="SeedSpeakDbModel.City" />
+    <EntitySet Name="Comments" EntityType="SeedSpeakDbModel.Comment" />
+    <EntitySet Name="Commitments" EntityType="SeedSpeakDbModel.Commitment" />
+    <EntitySet Name="Configs" EntityType="SeedSpeakDbModel.Config" />
+    <EntitySet Name="Countries" EntityType="SeedSpeakDbModel.Country" />
+    <EntitySet Name="ExternalAccounts" EntityType="SeedSpeakDbModel.ExternalAccount" />
+    <EntitySet Name="Flags" EntityType="SeedSpeakDbModel.Flag" />
+    <EntitySet Name="Locations" EntityType="SeedSpeakDbModel.Location" />
+    <EntitySet Name="Media" EntityType="SeedSpeakDbModel.Medium" />
+    <EntitySet Name="Members" EntityType="SeedSpeakDbModel.Member" />
+    <EntitySet Name="MemberProfiles" EntityType="SeedSpeakDbModel.MemberProfile" />
+    <EntitySet Name="Privacies" EntityType="SeedSpeakDbModel.Privacy" />
+    <EntitySet Name="Ratings" EntityType="SeedSpeakDbModel.Rating" />
+    <EntitySet Name="Regions" EntityType="SeedSpeakDbModel.Region" />
+    <EntitySet Name="Roles" EntityType="SeedSpeakDbModel.Role" />
+    <EntitySet Name="Seeds" EntityType="SeedSpeakDbModel.Seed" />
+    <EntitySet Name="SubCategories" EntityType="SeedSpeakDbModel.SubCategory" />
+    <EntitySet Name="Tags" EntityType="SeedSpeakDbModel.Tag" />
+    <AssociationSet Name="FK__Bookmark__member__7A672E12" Association="SeedSpeakDbModel.FK__Bookmark__member__7A672E12">
+      <End Role="Member" EntitySet="Members" />
+      <End Role="Bookmark" EntitySet="Bookmarks" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Bookmark__seedId__797309D9" Association="SeedSpeakDbModel.FK__Bookmark__seedId__797309D9">
+      <End Role="Seed" EntitySet="Seeds" />
+      <End Role="Bookmark" EntitySet="Bookmarks" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Category__reques__1CF15040" Association="SeedSpeakDbModel.FK__Category__reques__1CF15040">
+      <End Role="Member" EntitySet="Members" />
+      <End Role="Category" EntitySet="Categories" />
+    </AssociationSet>
+    <AssociationSet Name="FK__SubCatego__child__239E4DCF" Association="SeedSpeakDbModel.FK__SubCatego__child__239E4DCF">
+      <End Role="Category" EntitySet="Categories" />
+      <End Role="SubCategory" EntitySet="SubCategories" />
+    </AssociationSet>
+    <AssociationSet Name="FK__SubCatego__paren__22AA2996" Association="SeedSpeakDbModel.FK__SubCatego__paren__22AA2996">
+      <End Role="Category" EntitySet="Categories" />
+      <End Role="SubCategory" EntitySet="SubCategories" />
+    </AssociationSet>
+    <AssociationSet Name="FK__City__regionId__0CBAE877" Association="SeedSpeakDbModel.FK__City__regionId__0CBAE877">
+      <End Role="Region" EntitySet="Regions" />
+      <End Role="City" EntitySet="Cities" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Location__cityId__29572725" Association="SeedSpeakDbModel.FK__Location__cityId__29572725">
+      <End Role="City" EntitySet="Cities" />
+      <End Role="Location" EntitySet="Locations" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Comment__comment__66603565" Association="SeedSpeakDbModel.FK__Comment__comment__66603565">
+      <End Role="Member" EntitySet="Members" />
+      <End Role="Comment" EntitySet="Comments" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Comment__seedId__656C112C" Association="SeedSpeakDbModel.FK__Comment__seedId__656C112C">
+      <End Role="Seed" EntitySet="Seeds" />
+      <End Role="Comment" EntitySet="Comments" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Commitmen__membe__5EBF139D" Association="SeedSpeakDbModel.FK__Commitmen__membe__5EBF139D">
+      <End Role="Member" EntitySet="Members" />
+      <End Role="Commitment" EntitySet="Commitments" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Commitmen__seedI__5FB337D6" Association="SeedSpeakDbModel.FK__Commitmen__seedI__5FB337D6">
+      <End Role="Seed" EntitySet="Seeds" />
+      <End Role="Commitment" EntitySet="Commitments" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Region__countryI__07020F21" Association="SeedSpeakDbModel.FK__Region__countryI__07020F21">
+      <End Role="Country" EntitySet="Countries" />
+      <End Role="Region" EntitySet="Regions" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ExternalA__membe__403A8C7D" Association="SeedSpeakDbModel.FK__ExternalA__membe__403A8C7D">
+      <End Role="Member" EntitySet="Members" />
+      <End Role="ExternalAccounts" EntitySet="ExternalAccounts" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Flag__flaggedByI__6D0D32F4" Association="SeedSpeakDbModel.FK__Flag__flaggedByI__6D0D32F4">
+      <End Role="Member" EntitySet="Members" />
+      <End Role="Flag" EntitySet="Flags" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Flag__seedId__6C190EBB" Association="SeedSpeakDbModel.FK__Flag__seedId__6C190EBB">
+      <End Role="Seed" EntitySet="Seeds" />
+      <End Role="Flag" EntitySet="Flags" />
+    </AssociationSet>
+    <AssociationSet Name="FK__MemberPro__locat__300424B4" Association="SeedSpeakDbModel.FK__MemberPro__locat__300424B4">
+      <End Role="Location" EntitySet="Locations" />
+      <End Role="MemberProfile" EntitySet="MemberProfiles" />
+    </AssociationSet>
+    <AssociationSet Name="FK__MemberPro__locat__7D439ABD" Association="SeedSpeakDbModel.FK__MemberPro__locat__7D439ABD">
+      <End Role="Location" EntitySet="Locations" />
+      <End Role="MemberProfile" EntitySet="MemberProfiles" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Seed__locationId__45F365D3" Association="SeedSpeakDbModel.FK__Seed__locationId__45F365D3">
+      <End Role="Location" EntitySet="Locations" />
+      <End Role="Seed" EntitySet="Seeds" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Media__seedId__5812160E" Association="SeedSpeakDbModel.FK__Media__seedId__5812160E">
+      <End Role="Seed" EntitySet="Seeds" />
+      <End Role="Media" EntitySet="Media" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Media__uploadedB__59063A47" Association="SeedSpeakDbModel.FK__Media__uploadedB__59063A47">
+      <End Role="Member" EntitySet="Members" />
+      <End Role="Media" EntitySet="Media" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Member__roleId__173876EA" Association="SeedSpeakDbModel.FK__Member__roleId__173876EA">
+      <End Role="Role" EntitySet="Roles" />
+      <End Role="Member" EntitySet="Members" />
+    </AssociationSet>
+    <AssociationSet Name="FK__MemberPro__membe__2F10007B" Association="SeedSpeakDbModel.FK__MemberPro__membe__2F10007B">
+      <End Role="Member" EntitySet="Members" />
+      <End Role="MemberProfile" EntitySet="MemberProfiles" />
+    </AssociationSet>
+    <AssociationSet Name="FK__MemberPro__membe__7E37BEF6" Association="SeedSpeakDbModel.FK__MemberPro__membe__7E37BEF6">
+      <End Role="Member" EntitySet="Members" />
+      <End Role="MemberProfile" EntitySet="MemberProfiles" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Privacy__memberI__3A81B327" Association="SeedSpeakDbModel.FK__Privacy__memberI__3A81B327">
+      <End Role="Member" EntitySet="Members" />
+      <End Role="Privacy" EntitySet="Privacies" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Rating__memberId__73BA3083" Association="SeedSpeakDbModel.FK__Rating__memberId__73BA3083">
+      <End Role="Member" EntitySet="Members" />
+      <End Role="Rating" EntitySet="Ratings" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Seed__ownerId__46E78A0C" Association="SeedSpeakDbModel.FK__Seed__ownerId__46E78A0C">
+      <End Role="Member" EntitySet="Members" />
+      <End Role="Seed" EntitySet="Seeds" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Rating__seedId__72C60C4A" Association="SeedSpeakDbModel.FK__Rating__seedId__72C60C4A">
+      <End Role="Seed" EntitySet="Seeds" />
+      <End Role="Rating" EntitySet="Ratings" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Tag__seedId__4CA06362" Association="SeedSpeakDbModel.FK__Tag__seedId__4CA06362">
+      <End Role="Seed" EntitySet="Seeds" />
+      <End Role="Tag" EntitySet="Tags" />
+    </AssociationSet>
+    <AssociationSet Name="Seed_has_Category" Association="SeedSpeakDbModel.Seed_has_Category">
+      <End Role="Category" EntitySet="Categories" />
+      <End Role="Seed" EntitySet="Seeds" />
+    </AssociationSet>
+    <FunctionImport Name="usp_UserGrowingSeed" EntitySet="Seeds" ReturnType="Collection(SeedSpeakDbModel.Seed)" />
+    <FunctionImport Name="usp_Member" ReturnType="Collection(SeedSpeakDbModel.MemberRole)" />
+    <FunctionImport Name="Usp_GetTopSeedPlanter" ReturnType="Collection(SeedSpeakDbModel.TopSeedPlanter)" />
+    <FunctionImport Name="usp_TopGrowingSeed" ReturnType="Collection(SeedSpeakDbModel.TopGrowingSeed)" />
+    <EntitySet Name="Messages" EntityType="SeedSpeakDbModel.Message" />
+    <FunctionImport Name="Usp_GetNotification" ReturnType="Collection(SeedSpeakDbModel.Usp_GetNotification_Result)">
+      <Parameter Name="MemberID" Mode="In" Type="Guid" />
+    </FunctionImport>
+    <FunctionImport Name="usp_GetCommentNotification" ReturnType="Collection(SeedSpeakDbModel.usp_GetCommentNotification_Result)">
+      <Parameter Name="MemberID" Mode="In" Type="Guid" />
+    </FunctionImport>
+    <FunctionImport Name="usp_GetCommitmentNotification" ReturnType="Collection(SeedSpeakDbModel.usp_GetCommitmentNotification_Result)">
+      <Parameter Name="MemberID" Mode="In" Type="Guid" />
+    </FunctionImport>
+    <FunctionImport Name="usp_GetFlagNotification" ReturnType="Collection(SeedSpeakDbModel.usp_GetFlagNotification_Result)">
+      <Parameter Name="MemberID" Mode="In" Type="Guid" />
+    </FunctionImport>
+    <EntitySet Name="Contents" EntityType="SeedSpeakDbModel.Content" />
+    <FunctionImport Name="usp_SearchSeeds" EntitySet="Seeds" ReturnType="Collection(SeedSpeakDbModel.Seed)">
+      <Parameter Name="criteria" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_GetLikeNotification" ReturnType="Collection(SeedSpeakDbModel.usp_GetLikeNotification_Result)">
+      <Parameter Name="MemberID" Mode="In" Type="Guid" />
+    </FunctionImport>
+    <EntitySet Name="MemberReplySeeds" EntityType="SeedSpeakDbModel.MemberReplySeed" />
+    <AssociationSet Name="FK_MemberReplySeeds_Member" Association="SeedSpeakDbModel.FK_MemberReplySeeds_Member">
+      <End Role="Member" EntitySet="Members" />
+      <End Role="MemberReplySeed" EntitySet="MemberReplySeeds" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MemberReplySeeds_Seed" Association="SeedSpeakDbModel.FK_MemberReplySeeds_Seed">
+      <End Role="Seed" EntitySet="Seeds" />
+      <End Role="MemberReplySeed" EntitySet="MemberReplySeeds" />
+    </AssociationSet>
+    <EntitySet Name="ssStreams" EntityType="SeedSpeakDbModel.ssStream" />
+    <AssociationSet Name="FK_Stream_Location" Association="SeedSpeakDbModel.FK_Stream_Location">
+      <End Role="Location" EntitySet="Locations" />
+      <End Role="ssStream" EntitySet="ssStreams" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Stream_Member" Association="SeedSpeakDbModel.FK_Stream_Member">
+      <End Role="Member" EntitySet="Members" />
+      <End Role="ssStream" EntitySet="ssStreams" />
+    </AssociationSet>
+    <AssociationSet Name="ssStream_has_Seeds" Association="SeedSpeakDbModel.ssStream_has_Seeds">
+      <End Role="Seed" EntitySet="Seeds" />
+      <End Role="ssStream" EntitySet="ssStreams" />
+    </AssociationSet>
+    <EntitySet Name="FollowPeoples" EntityType="SeedSpeakDbModel.FollowPeople" />
+    <EntitySet Name="MutePeoples" EntityType="SeedSpeakDbModel.MutePeople" />
+    <AssociationSet Name="FK_FollowPeople_Member" Association="SeedSpeakDbModel.FK_FollowPeople_Member">
+      <End Role="Member" EntitySet="Members" />
+      <End Role="FollowPeople" EntitySet="FollowPeoples" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FollowPeople_Member1" Association="SeedSpeakDbModel.FK_FollowPeople_Member1">
+      <End Role="Member" EntitySet="Members" />
+      <End Role="FollowPeople" EntitySet="FollowPeoples" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MutePeople_Member" Association="SeedSpeakDbModel.FK_MutePeople_Member">
+      <End Role="Member" EntitySet="Members" />
+      <End Role="MutePeople" EntitySet="MutePeoples" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MutePeople_Member1" Association="SeedSpeakDbModel.FK_MutePeople_Member1">
+      <End Role="Member" EntitySet="Members" />
+      <End Role="MutePeople" EntitySet="MutePeoples" />
+    </AssociationSet>
+    <EntitySet Name="HideUnhides" EntityType="SeedSpeakDbModel.HideUnhide" />
+    <AssociationSet Name="FK_HideUnhide_Member" Association="SeedSpeakDbModel.FK_HideUnhide_Member">
+      <End Role="Member" EntitySet="Members" />
+      <End Role="HideUnhide" EntitySet="HideUnhides" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HideUnhide_Seed" Association="SeedSpeakDbModel.FK_HideUnhide_Seed">
+      <End Role="Seed" EntitySet="Seeds" />
+      <End Role="HideUnhide" EntitySet="HideUnhides" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Seed_ParentSeed" Association="SeedSpeakDbModel.FK_Seed_ParentSeed">
+      <End Role="Seed" EntitySet="Seeds" />
+      <End Role="Seed1" EntitySet="Seeds" />
+    </AssociationSet>
+    <AssociationSet Name="ssStream_has_Category" Association="SeedSpeakDbModel.ssStream_has_Category">
+      <End Role="Category" EntitySet="Categories" />
+      <End Role="ssStream" EntitySet="ssStreams" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Bookmark">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Guid" Nullable="false" />
+    <Property Name="seedId" Type="Guid" />
+    <Property Name="memberId" Type="Guid" />
+    <NavigationProperty Name="Member" Relationship="SeedSpeakDbModel.FK__Bookmark__member__7A672E12" FromRole="Bookmark" ToRole="Member" />
+    <NavigationProperty Name="Seed" Relationship="SeedSpeakDbModel.FK__Bookmark__seedId__797309D9" FromRole="Bookmark" ToRole="Seed" />
+  </EntityType>
+  <EntityType Name="Category">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Guid" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="status" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="requestedById" Type="Guid" />
+    <NavigationProperty Name="Member" Relationship="SeedSpeakDbModel.FK__Category__reques__1CF15040" FromRole="Category" ToRole="Member" />
+    <NavigationProperty Name="SubCategories" Relationship="SeedSpeakDbModel.FK__SubCatego__child__239E4DCF" FromRole="Category" ToRole="SubCategory" />
+    <NavigationProperty Name="SubCategories1" Relationship="SeedSpeakDbModel.FK__SubCatego__paren__22AA2996" FromRole="Category" ToRole="SubCategory" />
+    <NavigationProperty Name="Seeds" Relationship="SeedSpeakDbModel.Seed_has_Category" FromRole="Category" ToRole="Seed" />
+    <NavigationProperty Name="ssStreams" Relationship="SeedSpeakDbModel.ssStream_has_Category" FromRole="Category" ToRole="ssStream" />
+  </EntityType>
+  <EntityType Name="City">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Guid" Nullable="false" />
+    <Property Name="code" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="name" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="latitude" Type="Double" />
+    <Property Name="longitude" Type="Double" />
+    <Property Name="regionId" Type="Guid" />
+    <NavigationProperty Name="Region" Relationship="SeedSpeakDbModel.FK__City__regionId__0CBAE877" FromRole="City" ToRole="Region" />
+    <NavigationProperty Name="Locations" Relationship="SeedSpeakDbModel.FK__Location__cityId__29572725" FromRole="City" ToRole="Location" />
+  </EntityType>
+  <EntityType Name="Comment">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Guid" Nullable="false" />
+    <Property Name="commentDate" Type="DateTime" />
+    <Property Name="msg" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+    <Property Name="seedId" Type="Guid" />
+    <Property Name="commentById" Type="Guid" />
+    <NavigationProperty Name="Member" Relationship="SeedSpeakDbModel.FK__Comment__comment__66603565" FromRole="Comment" ToRole="Member" />
+    <NavigationProperty Name="Seed" Relationship="SeedSpeakDbModel.FK__Comment__seedId__656C112C" FromRole="Comment" ToRole="Seed" />
+    <Property Type="Boolean" Name="isRead" />
+  </EntityType>
+  <EntityType Name="Commitment">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Guid" Nullable="false" />
+    <Property Name="commitDate" Type="DateTime" />
+    <Property Name="deadline" Type="DateTime" />
+    <Property Name="memberId" Type="Guid" />
+    <Property Name="seedId" Type="Guid" />
+    <Property Name="status" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="Member" Relationship="SeedSpeakDbModel.FK__Commitmen__membe__5EBF139D" FromRole="Commitment" ToRole="Member" />
+    <NavigationProperty Name="Seed" Relationship="SeedSpeakDbModel.FK__Commitmen__seedI__5FB337D6" FromRole="Commitment" ToRole="Seed" />
+    <Property Type="String" Name="msg" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="isRead" />
+  </EntityType>
+  <EntityType Name="Config">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Guid" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="value" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Country">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Guid" Nullable="false" />
+    <Property Name="code" Type="String" MaxLength="5" Unicode="false" FixedLength="false" />
+    <Property Name="name" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="Regions" Relationship="SeedSpeakDbModel.FK__Region__countryI__07020F21" FromRole="Country" ToRole="Region" />
+  </EntityType>
+  <EntityType Name="ExternalAccount">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Guid" Nullable="false" />
+    <Property Name="accountTye" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="username" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="passwd" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="verified" Type="Boolean" />
+    <Property Name="memberId" Type="Guid" />
+    <NavigationProperty Name="Member" Relationship="SeedSpeakDbModel.FK__ExternalA__membe__403A8C7D" FromRole="ExternalAccounts" ToRole="Member" />
+  </EntityType>
+  <EntityType Name="Flag">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Guid" Nullable="false" />
+    <Property Name="dateFlagged" Type="DateTime" />
+    <Property Name="seedId" Type="Guid" />
+    <Property Name="flaggedById" Type="Guid" />
+    <Property Name="reason" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="Member" Relationship="SeedSpeakDbModel.FK__Flag__flaggedByI__6D0D32F4" FromRole="Flag" ToRole="Member" />
+    <NavigationProperty Name="Seed" Relationship="SeedSpeakDbModel.FK__Flag__seedId__6C190EBB" FromRole="Flag" ToRole="Seed" />
+    <Property Type="Boolean" Name="isRead" />
+    <Property Type="Boolean" Name="isSpam" />
+    <Property Type="Boolean" Name="isWrongCategory" />
+    <Property Type="Boolean" Name="isProhibited" />
+    <Property Type="Boolean" Name="isOther" />
+  </EntityType>
+  <EntityType Name="Location">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Guid" Nullable="false" />
+    <Property Name="cityId" Type="Guid" />
+    <Property Name="zipcode" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+    <Property Name="localLat" Type="Double" />
+    <Property Name="localLong" Type="Double" />
+    <NavigationProperty Name="City" Relationship="SeedSpeakDbModel.FK__Location__cityId__29572725" FromRole="Location" ToRole="City" />
+    <NavigationProperty Name="MemberProfiles" Relationship="SeedSpeakDbModel.FK__MemberPro__locat__300424B4" FromRole="Location" ToRole="MemberProfile" />
+    <NavigationProperty Name="MemberProfiles1" Relationship="SeedSpeakDbModel.FK__MemberPro__locat__7D439ABD" FromRole="Location" ToRole="MemberProfile" />
+    <NavigationProperty Name="Seeds" Relationship="SeedSpeakDbModel.FK__Seed__locationId__45F365D3" FromRole="Location" ToRole="Seed" />
+    <Property Type="String" Name="crossStreet" MaxLength="200" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="ssStreams" Relationship="SeedSpeakDbModel.FK_Stream_Location" FromRole="Location" ToRole="ssStream" />
+  </EntityType>
+  <EntityType Name="Medium">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Guid" Nullable="false" />
+    <Property Name="title" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="dateUploaded" Type="DateTime" />
+    <Property Name="seedId" Type="Guid" />
+    <Property Name="uploadedById" Type="Guid" />
+    <Property Name="type" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="path" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="embedScript" Type="String" MaxLength="2000" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="Seed" Relationship="SeedSpeakDbModel.FK__Media__seedId__5812160E" FromRole="Media" ToRole="Seed" />
+    <NavigationProperty Name="Member" Relationship="SeedSpeakDbModel.FK__Media__uploadedB__59063A47" FromRole="Media" ToRole="Member" />
+  </EntityType>
+  <EntityType Name="Member">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Guid" Nullable="false" />
+    <Property Name="username" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="passwd" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="firstName" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="lastName" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="status" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="created" Type="DateTime" />
+    <Property Name="lastLogin" Type="DateTime" />
+    <Property Name="roleId" Type="Guid" />
+    <Property Name="secretQ" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="secretA" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="isVerified" Type="Boolean" />
+    <NavigationProperty Name="Bookmarks" Relationship="SeedSpeakDbModel.FK__Bookmark__member__7A672E12" FromRole="Member" ToRole="Bookmark" />
+    <NavigationProperty Name="Categories" Relationship="SeedSpeakDbModel.FK__Category__reques__1CF15040" FromRole="Member" ToRole="Category" />
+    <NavigationProperty Name="Comments" Relationship="SeedSpeakDbModel.FK__Comment__comment__66603565" FromRole="Member" ToRole="Comment" />
+    <NavigationProperty Name="Commitments" Relationship="SeedSpeakDbModel.FK__Commitmen__membe__5EBF139D" FromRole="Member" ToRole="Commitment" />
+    <NavigationProperty Name="ExternalAccounts" Relationship="SeedSpeakDbModel.FK__ExternalA__membe__403A8C7D" FromRole="Member" ToRole="ExternalAccounts" />
+    <NavigationProperty Name="Flags" Relationship="SeedSpeakDbModel.FK__Flag__flaggedByI__6D0D32F4" FromRole="Member" ToRole="Flag" />
+    <NavigationProperty Name="Media" Relationship="SeedSpeakDbModel.FK__Media__uploadedB__59063A47" FromRole="Member" ToRole="Media" />
+    <NavigationProperty Name="Role" Relationship="SeedSpeakDbModel.FK__Member__roleId__173876EA" FromRole="Member" ToRole="Role" />
+    <NavigationProperty Name="MemberProfiles" Relationship="SeedSpeakDbModel.FK__MemberPro__membe__2F10007B" FromRole="Member" ToRole="MemberProfile" />
+    <NavigationProperty Name="MemberProfiles1" Relationship="SeedSpeakDbModel.FK__MemberPro__membe__7E37BEF6" FromRole="Member" ToRole="MemberProfile" />
+    <NavigationProperty Name="Privacies" Relationship="SeedSpeakDbModel.FK__Privacy__memberI__3A81B327" FromRole="Member" ToRole="Privacy" />
+    <NavigationProperty Name="Ratings" Relationship="SeedSpeakDbModel.FK__Rating__memberId__73BA3083" FromRole="Member" ToRole="Rating" />
+    <NavigationProperty Name="Seeds" Relationship="SeedSpeakDbModel.FK__Seed__ownerId__46E78A0C" FromRole="Member" ToRole="Seed" />
+    <Property Type="String" Name="organisationName" MaxLength="200" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="MemberReplySeeds" Relationship="SeedSpeakDbModel.FK_MemberReplySeeds_Member" FromRole="Member" ToRole="MemberReplySeed" />
+    <NavigationProperty Name="ssStreams" Relationship="SeedSpeakDbModel.FK_Stream_Member" FromRole="Member" ToRole="ssStream" />
+    <Property Type="String" Name="Email" MaxLength="100" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="FollowPeoples" Relationship="SeedSpeakDbModel.FK_FollowPeople_Member" FromRole="Member" ToRole="FollowPeople" />
+    <NavigationProperty Name="FollowPeoples1" Relationship="SeedSpeakDbModel.FK_FollowPeople_Member1" FromRole="Member" ToRole="FollowPeople" />
+    <NavigationProperty Name="MutePeoples" Relationship="SeedSpeakDbModel.FK_MutePeople_Member" FromRole="Member" ToRole="MutePeople" />
+    <NavigationProperty Name="MutePeoples1" Relationship="SeedSpeakDbModel.FK_MutePeople_Member1" FromRole="Member" ToRole="MutePeople" />
+    <NavigationProperty Name="HideUnhides" Relationship="SeedSpeakDbModel.FK_HideUnhide_Member" FromRole="Member" ToRole="HideUnhide" />
+  </EntityType>
+  <EntityType Name="MemberProfile">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Guid" Nullable="false" />
+    <Property Name="sex" Type="String" MaxLength="6" Unicode="false" FixedLength="false" />
+    <Property Name="dob" Type="DateTime" />
+    <Property Name="memberId" Type="Guid" />
+    <Property Name="locationId" Type="Guid" />
+    <Property Name="imagePath" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="Location" Relationship="SeedSpeakDbModel.FK__MemberPro__locat__300424B4" FromRole="MemberProfile" ToRole="Location" />
+    <NavigationProperty Name="Location1" Relationship="SeedSpeakDbModel.FK__MemberPro__locat__7D439ABD" FromRole="MemberProfile" ToRole="Location" />
+    <NavigationProperty Name="Member" Relationship="SeedSpeakDbModel.FK__MemberPro__membe__2F10007B" FromRole="MemberProfile" ToRole="Member" />
+    <NavigationProperty Name="Member1" Relationship="SeedSpeakDbModel.FK__MemberPro__membe__7E37BEF6" FromRole="MemberProfile" ToRole="Member" />
+    <Property Type="String" Name="setURL" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="bio" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Privacy">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Guid" Nullable="false" />
+    <Property Name="memberId" Type="Guid" />
+    <Property Name="viewUsername" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="seedContribution" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="seedCommitment" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="viewLocation" Type="Boolean" />
+    <Property Name="webNotification" Type="Boolean" />
+    <Property Name="devicePush" Type="Boolean" />
+    <Property Name="emailNotification" Type="Boolean" />
+    <Property Name="autoTweet" Type="Boolean" />
+    <NavigationProperty Name="Member" Relationship="SeedSpeakDbModel.FK__Privacy__memberI__3A81B327" FromRole="Privacy" ToRole="Member" />
+  </EntityType>
+  <EntityType Name="Rating">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Guid" Nullable="false" />
+    <Property Name="likes" Type="String" MaxLength="5" Unicode="false" FixedLength="false" />
+    <Property Name="seedId" Type="Guid" />
+    <Property Name="memberId" Type="Guid" />
+    <NavigationProperty Name="Member" Relationship="SeedSpeakDbModel.FK__Rating__memberId__73BA3083" FromRole="Rating" ToRole="Member" />
+    <NavigationProperty Name="Seed" Relationship="SeedSpeakDbModel.FK__Rating__seedId__72C60C4A" FromRole="Rating" ToRole="Seed" />
+    <Property Type="Boolean" Name="isRead" />
+    <Property Type="DateTime" Name="ratingDate" />
+  </EntityType>
+  <EntityType Name="Region">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Guid" Nullable="false" />
+    <Property Name="code" Type="String" MaxLength="5" Unicode="false" FixedLength="false" />
+    <Property Name="name" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="countryId" Type="Guid" />
+    <NavigationProperty Name="Cities" Relationship="SeedSpeakDbModel.FK__City__regionId__0CBAE877" FromRole="Region" ToRole="City" />
+    <NavigationProperty Name="Country" Relationship="SeedSpeakDbModel.FK__Region__countryI__07020F21" FromRole="Region" ToRole="Country" />
+  </EntityType>
+  <EntityType Name="Role">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Guid" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="Members" Relationship="SeedSpeakDbModel.FK__Member__roleId__173876EA" FromRole="Role" ToRole="Member" />
+  </EntityType>
+  <EntityType Name="Seed">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Guid" Nullable="false" />
+    <Property Name="title" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="description" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="locationId" Type="Guid" />
+    <Property Name="ownerId" Type="Guid" />
+    <Property Name="createDate" Type="DateTime" />
+    <Property Name="status" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="Bookmarks" Relationship="SeedSpeakDbModel.FK__Bookmark__seedId__797309D9" FromRole="Seed" ToRole="Bookmark" />
+    <NavigationProperty Name="Comments" Relationship="SeedSpeakDbModel.FK__Comment__seedId__656C112C" FromRole="Seed" ToRole="Comment" />
+    <NavigationProperty Name="Commitments" Relationship="SeedSpeakDbModel.FK__Commitmen__seedI__5FB337D6" FromRole="Seed" ToRole="Commitment" />
+    <NavigationProperty Name="Flags" Relationship="SeedSpeakDbModel.FK__Flag__seedId__6C190EBB" FromRole="Seed" ToRole="Flag" />
+    <NavigationProperty Name="Location" Relationship="SeedSpeakDbModel.FK__Seed__locationId__45F365D3" FromRole="Seed" ToRole="Location" />
+    <NavigationProperty Name="Media" Relationship="SeedSpeakDbModel.FK__Media__seedId__5812160E" FromRole="Seed" ToRole="Media" />
+    <NavigationProperty Name="Member" Relationship="SeedSpeakDbModel.FK__Seed__ownerId__46E78A0C" FromRole="Seed" ToRole="Member" />
+    <NavigationProperty Name="Ratings" Relationship="SeedSpeakDbModel.FK__Rating__seedId__72C60C4A" FromRole="Seed" ToRole="Rating" />
+    <NavigationProperty Name="Tags" Relationship="SeedSpeakDbModel.FK__Tag__seedId__4CA06362" FromRole="Seed" ToRole="Tag" />
+    <NavigationProperty Name="Categories" Relationship="SeedSpeakDbModel.Seed_has_Category" FromRole="Seed" ToRole="Category" />
+    <Property Type="Guid" Name="parentSeedID" />
+    <Property Type="Guid" Name="rootSeedID" />
+    <NavigationProperty Name="MemberReplySeeds" Relationship="SeedSpeakDbModel.FK_MemberReplySeeds_Seed" FromRole="Seed" ToRole="MemberReplySeed" />
+    <NavigationProperty Name="ssStreams" Relationship="SeedSpeakDbModel.ssStream_has_Seeds" FromRole="Seed" ToRole="ssStream" />
+    <Property Type="Int32" Name="seedDistance" />
+    <NavigationProperty Name="HideUnhides" Relationship="SeedSpeakDbModel.FK_HideUnhide_Seed" FromRole="Seed" ToRole="HideUnhide" />
+    <NavigationProperty Name="Seed1" Relationship="SeedSpeakDbModel.FK_Seed_ParentSeed" FromRole="Seed" ToRole="Seed1" />
+    <NavigationProperty Name="Seed2" Relationship="SeedSpeakDbModel.FK_Seed_ParentSeed" FromRole="Seed1" ToRole="Seed" />
+  </EntityType>
+  <EntityType Name="SubCategory">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Guid" Nullable="false" />
+    <Property Name="parentId" Type="Guid" />
+    <Property Name="childId" Type="Guid" />
+    <NavigationProperty Name="Category" Relationship="SeedSpeakDbModel.FK__SubCatego__child__239E4DCF" FromRole="SubCategory" ToRole="Category" />
+    <NavigationProperty Name="Category1" Relationship="SeedSpeakDbModel.FK__SubCatego__paren__22AA2996" FromRole="SubCategory" ToRole="Category" />
+  </EntityType>
+  <EntityType Name="Tag">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Guid" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="seedId" Type="Guid" />
+    <NavigationProperty Name="Seed" Relationship="SeedSpeakDbModel.FK__Tag__seedId__4CA06362" FromRole="Tag" ToRole="Seed" />
+  </EntityType>
+  <Association Name="FK__Bookmark__member__7A672E12">
+    <End Role="Member" Type="SeedSpeakDbModel.Member" Multiplicity="0..1" />
+    <End Role="Bookmark" Type="SeedSpeakDbModel.Bookmark" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Member">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Bookmark">
+        <PropertyRef Name="memberId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Bookmark__seedId__797309D9">
+    <End Role="Seed" Type="SeedSpeakDbModel.Seed" Multiplicity="0..1" />
+    <End Role="Bookmark" Type="SeedSpeakDbModel.Bookmark" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Seed">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Bookmark">
+        <PropertyRef Name="seedId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Category__reques__1CF15040">
+    <End Role="Member" Type="SeedSpeakDbModel.Member" Multiplicity="0..1" />
+    <End Role="Category" Type="SeedSpeakDbModel.Category" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Member">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Category">
+        <PropertyRef Name="requestedById" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__SubCatego__child__239E4DCF">
+    <End Role="Category" Type="SeedSpeakDbModel.Category" Multiplicity="0..1" />
+    <End Role="SubCategory" Type="SeedSpeakDbModel.SubCategory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Category">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="SubCategory">
+        <PropertyRef Name="childId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__SubCatego__paren__22AA2996">
+    <End Role="Category" Type="SeedSpeakDbModel.Category" Multiplicity="0..1" />
+    <End Role="SubCategory" Type="SeedSpeakDbModel.SubCategory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Category">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="SubCategory">
+        <PropertyRef Name="parentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__City__regionId__0CBAE877">
+    <End Role="Region" Type="SeedSpeakDbModel.Region" Multiplicity="0..1" />
+    <End Role="City" Type="SeedSpeakDbModel.City" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Region">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="City">
+        <PropertyRef Name="regionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Location__cityId__29572725">
+    <End Role="City" Type="SeedSpeakDbModel.City" Multiplicity="0..1" />
+    <End Role="Location" Type="SeedSpeakDbModel.Location" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="City">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Location">
+        <PropertyRef Name="cityId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Comment__comment__66603565">
+    <End Role="Member" Type="SeedSpeakDbModel.Member" Multiplicity="0..1" />
+    <End Role="Comment" Type="SeedSpeakDbModel.Comment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Member">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Comment">
+        <PropertyRef Name="commentById" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Comment__seedId__656C112C">
+    <End Role="Seed" Type="SeedSpeakDbModel.Seed" Multiplicity="0..1" />
+    <End Role="Comment" Type="SeedSpeakDbModel.Comment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Seed">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Comment">
+        <PropertyRef Name="seedId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Commitmen__membe__5EBF139D">
+    <End Role="Member" Type="SeedSpeakDbModel.Member" Multiplicity="0..1" />
+    <End Role="Commitment" Type="SeedSpeakDbModel.Commitment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Member">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Commitment">
+        <PropertyRef Name="memberId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Commitmen__seedI__5FB337D6">
+    <End Role="Seed" Type="SeedSpeakDbModel.Seed" Multiplicity="0..1" />
+    <End Role="Commitment" Type="SeedSpeakDbModel.Commitment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Seed">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Commitment">
+        <PropertyRef Name="seedId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Region__countryI__07020F21">
+    <End Role="Country" Type="SeedSpeakDbModel.Country" Multiplicity="0..1" />
+    <End Role="Region" Type="SeedSpeakDbModel.Region" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Country">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Region">
+        <PropertyRef Name="countryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ExternalA__membe__403A8C7D">
+    <End Role="Member" Type="SeedSpeakDbModel.Member" Multiplicity="0..1" />
+    <End Role="ExternalAccounts" Type="SeedSpeakDbModel.ExternalAccount" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Member">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="ExternalAccounts">
+        <PropertyRef Name="memberId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Flag__flaggedByI__6D0D32F4">
+    <End Role="Member" Type="SeedSpeakDbModel.Member" Multiplicity="0..1" />
+    <End Role="Flag" Type="SeedSpeakDbModel.Flag" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Member">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Flag">
+        <PropertyRef Name="flaggedById" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Flag__seedId__6C190EBB">
+    <End Role="Seed" Type="SeedSpeakDbModel.Seed" Multiplicity="0..1" />
+    <End Role="Flag" Type="SeedSpeakDbModel.Flag" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Seed">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Flag">
+        <PropertyRef Name="seedId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__MemberPro__locat__300424B4">
+    <End Role="Location" Type="SeedSpeakDbModel.Location" Multiplicity="0..1" />
+    <End Role="MemberProfile" Type="SeedSpeakDbModel.MemberProfile" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Location">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="MemberProfile">
+        <PropertyRef Name="locationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__MemberPro__locat__7D439ABD">
+    <End Role="Location" Type="SeedSpeakDbModel.Location" Multiplicity="0..1" />
+    <End Role="MemberProfile" Type="SeedSpeakDbModel.MemberProfile" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Location">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="MemberProfile">
+        <PropertyRef Name="locationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Seed__locationId__45F365D3">
+    <End Role="Location" Type="SeedSpeakDbModel.Location" Multiplicity="0..1" />
+    <End Role="Seed" Type="SeedSpeakDbModel.Seed" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Location">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Seed">
+        <PropertyRef Name="locationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Media__seedId__5812160E">
+    <End Role="Seed" Type="SeedSpeakDbModel.Seed" Multiplicity="0..1" />
+    <End Role="Media" Type="SeedSpeakDbModel.Medium" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Seed">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Media">
+        <PropertyRef Name="seedId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Media__uploadedB__59063A47">
+    <End Role="Member" Type="SeedSpeakDbModel.Member" Multiplicity="0..1" />
+    <End Role="Media" Type="SeedSpeakDbModel.Medium" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Member">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Media">
+        <PropertyRef Name="uploadedById" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Member__roleId__173876EA">
+    <End Role="Role" Type="SeedSpeakDbModel.Role" Multiplicity="0..1" />
+    <End Role="Member" Type="SeedSpeakDbModel.Member" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Role">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Member">
+        <PropertyRef Name="roleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__MemberPro__membe__2F10007B">
+    <End Role="Member" Type="SeedSpeakDbModel.Member" Multiplicity="0..1" />
+    <End Role="MemberProfile" Type="SeedSpeakDbModel.MemberProfile" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Member">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="MemberProfile">
+        <PropertyRef Name="memberId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__MemberPro__membe__7E37BEF6">
+    <End Role="Member" Type="SeedSpeakDbModel.Member" Multiplicity="0..1" />
+    <End Role="MemberProfile" Type="SeedSpeakDbModel.MemberProfile" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Member">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="MemberProfile">
+        <PropertyRef Name="memberId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Privacy__memberI__3A81B327">
+    <End Role="Member" Type="SeedSpeakDbModel.Member" Multiplicity="0..1" />
+    <End Role="Privacy" Type="SeedSpeakDbModel.Privacy" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Member">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Privacy">
+        <PropertyRef Name="memberId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Rating__memberId__73BA3083">
+    <End Role="Member" Type="SeedSpeakDbModel.Member" Multiplicity="0..1" />
+    <End Role="Rating" Type="SeedSpeakDbModel.Rating" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Member">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Rating">
+        <PropertyRef Name="memberId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Seed__ownerId__46E78A0C">
+    <End Role="Member" Type="SeedSpeakDbModel.Member" Multiplicity="0..1" />
+    <End Role="Seed" Type="SeedSpeakDbModel.Seed" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Member">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Seed">
+        <PropertyRef Name="ownerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Rating__seedId__72C60C4A">
+    <End Role="Seed" Type="SeedSpeakDbModel.Seed" Multiplicity="0..1" />
+    <End Role="Rating" Type="SeedSpeakDbModel.Rating" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Seed">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Rating">
+        <PropertyRef Name="seedId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Tag__seedId__4CA06362">
+    <End Role="Seed" Type="SeedSpeakDbModel.Seed" Multiplicity="0..1" />
+    <End Role="Tag" Type="SeedSpeakDbModel.Tag" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Seed">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Tag">
+        <PropertyRef Name="seedId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Seed_has_Category">
+    <End Role="Category" Type="SeedSpeakDbModel.Category" Multiplicity="*" />
+    <End Role="Seed" Type="SeedSpeakDbModel.Seed" Multiplicity="*" />
+  </Association>
+  <ComplexType Name="MemberRole">
+    <Property Type="String" Name="username" Nullable="false" />
+    <Property Type="String" Name="rolename" Nullable="false" />
+    <Property Type="String" Name="status" Nullable="false" />
+    <Property Type="DateTime" Name="created" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="TopSeedPlanter">
+    <Property Type="Guid" Name="id" Nullable="false" />
+    <Property Type="String" Name="MemberName" Nullable="true" MaxLength="201" />
+    <Property Type="Int32" Name="SeedCount" Nullable="true" />
+    <Property Type="String" Name="ImagePath" Nullable="true" MaxLength="500" />
+    <Property Type="String" Name="organisationName" Nullable="true" MaxLength="200" />
+  </ComplexType>
+  <ComplexType Name="TopGrowingSeed">
+    <Property Type="Guid" Name="seedId" Nullable="true" />
+    <Property Type="Int32" Name="commentcount" Nullable="true" />
+    <Property Type="String" Name="title" Nullable="true" MaxLength="200" />
+  </ComplexType>
+  <EntityType Name="Message">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Guid" Name="id" Nullable="false" />
+    <Property Type="String" Name="type" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="displayMessage" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="typeId" />
+  </EntityType>
+  <ComplexType Name="Usp_GetNotification_Result">
+    <Property Type="String" Name="Notify" Nullable="true" MaxLength="131" />
+  </ComplexType>
+  <ComplexType Name="usp_GetCommentNotification_Result">
+    <Property Type="String" Name="Notify" Nullable="true" MaxLength="130" />
+    <Property Type="DateTime" Name="commentDate" Nullable="true" Precision="23" />
+    <Property Type="Int32" Name="TotalCount" Nullable="true" />
+    <Property Type="Guid" Name="id" Nullable="false" />
+    <Property Type="Guid" Name="MemberID" Nullable="true" />
+    <Property Type="Guid" Name="SeedID" Nullable="true" />
+    <Property Type="String" Name="MemberName" Nullable="true" MaxLength="100" />
+  </ComplexType>
+  <ComplexType Name="usp_GetCommitmentNotification_Result">
+    <Property Type="String" Name="Notify" Nullable="true" MaxLength="131" />
+    <Property Type="DateTime" Name="commitDate" Nullable="true" Precision="23" />
+    <Property Type="Int32" Name="TotalCount" Nullable="true" />
+    <Property Type="Guid" Name="id" Nullable="false" />
+    <Property Type="Guid" Name="MemberID" Nullable="true" />
+    <Property Type="Guid" Name="SeedID" Nullable="true" />
+    <Property Type="String" Name="MemberName" Nullable="true" MaxLength="100" />
+  </ComplexType>
+  <ComplexType Name="usp_GetFlagNotification_Result">
+    <Property Type="String" Name="Notify" Nullable="true" MaxLength="122" />
+    <Property Type="DateTime" Name="dateFlagged" Nullable="true" Precision="23" />
+    <Property Type="Int32" Name="TotalCount" Nullable="true" />
+    <Property Type="Guid" Name="id" Nullable="false" />
+    <Property Type="Guid" Name="MemberID" Nullable="true" />
+    <Property Type="Guid" Name="SeedID" Nullable="true" />
+    <Property Type="String" Name="MemberName" Nullable="true" MaxLength="100" />
+  </ComplexType>
+  <EntityType Name="Content">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Guid" Name="id" Nullable="false" />
+    <Property Type="String" Name="TypeID" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Value1" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Value2" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <ComplexType Name="usp_GetLikeNotification_Result">
+    <Property Type="Guid" Name="id" Nullable="false" />
+    <Property Type="Guid" Name="MemberID" Nullable="true" />
+    <Property Type="Guid" Name="SeedID" Nullable="true" />
+    <Property Type="String" Name="MemberName" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="Notify" Nullable="true" MaxLength="122" />
+    <Property Type="DateTime" Name="ratingDate" Nullable="true" Precision="23" />
+    <Property Type="Int32" Name="TotalCount" Nullable="true" />
+  </ComplexType>
+  <EntityType Name="MemberReplySeed">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Guid" Name="id" Nullable="false" />
+    <Property Type="Guid" Name="memberID" />
+    <Property Type="Guid" Name="seedID" />
+    <NavigationProperty Name="Member" Relationship="SeedSpeakDbModel.FK_MemberReplySeeds_Member" FromRole="MemberReplySeed" ToRole="Member" />
+    <NavigationProperty Name="Seed" Relationship="SeedSpeakDbModel.FK_MemberReplySeeds_Seed" FromRole="MemberReplySeed" ToRole="Seed" />
+  </EntityType>
+  <Association Name="FK_MemberReplySeeds_Member">
+    <End Type="SeedSpeakDbModel.Member" Role="Member" Multiplicity="0..1" />
+    <End Type="SeedSpeakDbModel.MemberReplySeed" Role="MemberReplySeed" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Member">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="MemberReplySeed">
+        <PropertyRef Name="memberID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MemberReplySeeds_Seed">
+    <End Type="SeedSpeakDbModel.Seed" Role="Seed" Multiplicity="0..1" />
+    <End Type="SeedSpeakDbModel.MemberReplySeed" Role="MemberReplySeed" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Seed">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="MemberReplySeed">
+        <PropertyRef Name="seedID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="ssStream">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Guid" Name="id" Nullable="false" />
+    <Property Type="String" Name="title" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="description" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="criteria" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="streamType" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="Guid" Name="ownerId" />
+    <Property Type="Guid" Name="locationId" />
+    <Property Type="Boolean" Name="isPublic" />
+    <Property Type="DateTime" Name="createDate" />
+    <Property Type="String" Name="status" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Location" Relationship="SeedSpeakDbModel.FK_Stream_Location" FromRole="ssStream" ToRole="Location" />
+    <NavigationProperty Name="Member" Relationship="SeedSpeakDbModel.FK_Stream_Member" FromRole="ssStream" ToRole="Member" />
+    <NavigationProperty Name="Seeds" Relationship="SeedSpeakDbModel.ssStream_has_Seeds" FromRole="ssStream" ToRole="Seed" />
+    <NavigationProperty Name="Categories" Relationship="SeedSpeakDbModel.ssStream_has_Category" FromRole="ssStream" ToRole="Category" />
+  </EntityType>
+  <Association Name="FK_Stream_Location">
+    <End Type="SeedSpeakDbModel.Location" Role="Location" Multiplicity="0..1" />
+    <End Type="SeedSpeakDbModel.ssStream" Role="ssStream" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Location">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="ssStream">
+        <PropertyRef Name="locationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Stream_Member">
+    <End Type="SeedSpeakDbModel.Member" Role="Member" Multiplicity="0..1" />
+    <End Type="SeedSpeakDbModel.ssStream" Role="ssStream" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Member">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="ssStream">
+        <PropertyRef Name="ownerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ssStream_has_Seeds">
+    <End Type="SeedSpeakDbModel.Seed" Role="Seed" Multiplicity="*" />
+    <End Type="SeedSpeakDbModel.ssStream" Role="ssStream" Multiplicity="*" />
+  </Association>
+  <EntityType Name="FollowPeople">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Guid" Name="id" Nullable="false" />
+    <Property Type="Guid" Name="memberId" />
+    <Property Type="Guid" Name="followingId" />
+    <NavigationProperty Name="Member" Relationship="SeedSpeakDbModel.FK_FollowPeople_Member" FromRole="FollowPeople" ToRole="Member" />
+    <NavigationProperty Name="Member1" Relationship="SeedSpeakDbModel.FK_FollowPeople_Member1" FromRole="FollowPeople" ToRole="Member" />
+  </EntityType>
+  <EntityType Name="MutePeople">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Guid" Name="id" Nullable="false" />
+    <Property Type="Guid" Name="memberId" />
+    <Property Type="Guid" Name="muteId" />
+    <NavigationProperty Name="Member" Relationship="SeedSpeakDbModel.FK_MutePeople_Member" FromRole="MutePeople" ToRole="Member" />
+    <NavigationProperty Name="Member1" Relationship="SeedSpeakDbModel.FK_MutePeople_Member1" FromRole="MutePeople" ToRole="Member" />
+  </EntityType>
+  <Association Name="FK_FollowPeople_Member">
+    <End Type="SeedSpeakDbModel.Member" Role="Member" Multiplicity="0..1" />
+    <End Type="SeedSpeakDbModel.FollowPeople" Role="FollowPeople" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Member">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="FollowPeople">
+        <PropertyRef Name="memberId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FollowPeople_Member1">
+    <End Type="SeedSpeakDbModel.Member" Role="Member" Multiplicity="0..1" />
+    <End Type="SeedSpeakDbModel.FollowPeople" Role="FollowPeople" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Member">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="FollowPeople">
+        <PropertyRef Name="followingId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MutePeople_Member">
+    <End Type="SeedSpeakDbModel.Member" Role="Member" Multiplicity="0..1" />
+    <End Type="SeedSpeakDbModel.MutePeople" Role="MutePeople" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Member">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="MutePeople">
+        <PropertyRef Name="memberId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MutePeople_Member1">
+    <End Type="SeedSpeakDbModel.Member" Role="Member" Multiplicity="0..1" />
+    <End Type="SeedSpeakDbModel.MutePeople" Role="MutePeople" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Member">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="MutePeople">
+        <PropertyRef Name="muteId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="HideUnhide">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Guid" Name="id" Nullable="false" />
+    <Property Type="Guid" Name="memId" />
+    <Property Type="Guid" Name="seedId" />
+    <NavigationProperty Name="Member" Relationship="SeedSpeakDbModel.FK_HideUnhide_Member" FromRole="HideUnhide" ToRole="Member" />
+    <NavigationProperty Name="Seed" Relationship="SeedSpeakDbModel.FK_HideUnhide_Seed" FromRole="HideUnhide" ToRole="Seed" />
+  </EntityType>
+  <Association Name="FK_HideUnhide_Member">
+    <End Type="SeedSpeakDbModel.Member" Role="Member" Multiplicity="0..1" />
+    <End Type="SeedSpeakDbModel.HideUnhide" Role="HideUnhide" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Member">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="HideUnhide">
+        <PropertyRef Name="memId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HideUnhide_Seed">
+    <End Type="SeedSpeakDbModel.Seed" Role="Seed" Multiplicity="0..1" />
+    <End Type="SeedSpeakDbModel.HideUnhide" Role="HideUnhide" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Seed">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="HideUnhide">
+        <PropertyRef Name="seedId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Seed_ParentSeed">
+    <End Type="SeedSpeakDbModel.Seed" Role="Seed" Multiplicity="0..1" />
+    <End Type="SeedSpeakDbModel.Seed" Role="Seed1" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Seed">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Seed1">
+        <PropertyRef Name="parentSeedID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ssStream_has_Category">
+    <End Type="SeedSpeakDbModel.Category" Role="Category" Multiplicity="*" />
+    <End Type="SeedSpeakDbModel.ssStream" Role="ssStream" Multiplicity="*" />
+  </Association>
+</Schema>

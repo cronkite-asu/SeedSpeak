@@ -1,0 +1,1123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SeedSpeakDbModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="SeedSpeakDbModelStoreContainer">
+    <EntitySet Name="Bookmark" EntityType="SeedSpeakDbModel.Store.Bookmark" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Category" EntityType="SeedSpeakDbModel.Store.Category" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="City" EntityType="SeedSpeakDbModel.Store.City" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Comment" EntityType="SeedSpeakDbModel.Store.Comment" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Commitment" EntityType="SeedSpeakDbModel.Store.Commitment" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Config" EntityType="SeedSpeakDbModel.Store.Config" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Content" EntityType="SeedSpeakDbModel.Store.Content" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Country" EntityType="SeedSpeakDbModel.Store.Country" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ExternalAccounts" EntityType="SeedSpeakDbModel.Store.ExternalAccounts" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Flag" EntityType="SeedSpeakDbModel.Store.Flag" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="FollowPeople" EntityType="SeedSpeakDbModel.Store.FollowPeople" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="HideUnhide" EntityType="SeedSpeakDbModel.Store.HideUnhide" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Location" EntityType="SeedSpeakDbModel.Store.Location" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Media" EntityType="SeedSpeakDbModel.Store.Media" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Member" EntityType="SeedSpeakDbModel.Store.Member" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MemberProfile" EntityType="SeedSpeakDbModel.Store.MemberProfile" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MemberReplySeeds" EntityType="SeedSpeakDbModel.Store.MemberReplySeeds" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Messages" EntityType="SeedSpeakDbModel.Store.Messages" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MutePeople" EntityType="SeedSpeakDbModel.Store.MutePeople" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Privacy" EntityType="SeedSpeakDbModel.Store.Privacy" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Rating" EntityType="SeedSpeakDbModel.Store.Rating" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Region" EntityType="SeedSpeakDbModel.Store.Region" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Role" EntityType="SeedSpeakDbModel.Store.Role" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Seed" EntityType="SeedSpeakDbModel.Store.Seed" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Seed_has_Category" EntityType="SeedSpeakDbModel.Store.Seed_has_Category" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ssStream" EntityType="SeedSpeakDbModel.Store.ssStream" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ssStream_has_Category" EntityType="SeedSpeakDbModel.Store.ssStream_has_Category" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ssStream_has_Seeds" EntityType="SeedSpeakDbModel.Store.ssStream_has_Seeds" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SubCategory" EntityType="SeedSpeakDbModel.Store.SubCategory" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Tag" EntityType="SeedSpeakDbModel.Store.Tag" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK__Bookmark__member__7A672E12" Association="SeedSpeakDbModel.Store.FK__Bookmark__member__7A672E12">
+      <End Role="Member" EntitySet="Member" />
+      <End Role="Bookmark" EntitySet="Bookmark" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Bookmark__seedId__797309D9" Association="SeedSpeakDbModel.Store.FK__Bookmark__seedId__797309D9">
+      <End Role="Seed" EntitySet="Seed" />
+      <End Role="Bookmark" EntitySet="Bookmark" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Category__reques__1CF15040" Association="SeedSpeakDbModel.Store.FK__Category__reques__1CF15040">
+      <End Role="Member" EntitySet="Member" />
+      <End Role="Category" EntitySet="Category" />
+    </AssociationSet>
+    <AssociationSet Name="FK__City__regionId__0CBAE877" Association="SeedSpeakDbModel.Store.FK__City__regionId__0CBAE877">
+      <End Role="Region" EntitySet="Region" />
+      <End Role="City" EntitySet="City" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Comment__comment__66603565" Association="SeedSpeakDbModel.Store.FK__Comment__comment__66603565">
+      <End Role="Member" EntitySet="Member" />
+      <End Role="Comment" EntitySet="Comment" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Comment__seedId__656C112C" Association="SeedSpeakDbModel.Store.FK__Comment__seedId__656C112C">
+      <End Role="Seed" EntitySet="Seed" />
+      <End Role="Comment" EntitySet="Comment" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Commitmen__membe__123EB7A3" Association="SeedSpeakDbModel.Store.FK__Commitmen__membe__123EB7A3">
+      <End Role="Member" EntitySet="Member" />
+      <End Role="Commitment" EntitySet="Commitment" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Commitmen__membe__5EBF139D" Association="SeedSpeakDbModel.Store.FK__Commitmen__membe__5EBF139D">
+      <End Role="Member" EntitySet="Member" />
+      <End Role="Commitment" EntitySet="Commitment" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Commitmen__seedI__1332DBDC" Association="SeedSpeakDbModel.Store.FK__Commitmen__seedI__1332DBDC">
+      <End Role="Seed" EntitySet="Seed" />
+      <End Role="Commitment" EntitySet="Commitment" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Commitmen__seedI__5FB337D6" Association="SeedSpeakDbModel.Store.FK__Commitmen__seedI__5FB337D6">
+      <End Role="Seed" EntitySet="Seed" />
+      <End Role="Commitment" EntitySet="Commitment" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ExternalA__membe__403A8C7D" Association="SeedSpeakDbModel.Store.FK__ExternalA__membe__403A8C7D">
+      <End Role="Member" EntitySet="Member" />
+      <End Role="ExternalAccounts" EntitySet="ExternalAccounts" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Flag__flaggedByI__6D0D32F4" Association="SeedSpeakDbModel.Store.FK__Flag__flaggedByI__6D0D32F4">
+      <End Role="Member" EntitySet="Member" />
+      <End Role="Flag" EntitySet="Flag" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Flag__seedId__6C190EBB" Association="SeedSpeakDbModel.Store.FK__Flag__seedId__6C190EBB">
+      <End Role="Seed" EntitySet="Seed" />
+      <End Role="Flag" EntitySet="Flag" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Location__cityId__29572725" Association="SeedSpeakDbModel.Store.FK__Location__cityId__29572725">
+      <End Role="City" EntitySet="City" />
+      <End Role="Location" EntitySet="Location" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Media__seedId__5812160E" Association="SeedSpeakDbModel.Store.FK__Media__seedId__5812160E">
+      <End Role="Seed" EntitySet="Seed" />
+      <End Role="Media" EntitySet="Media" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Media__uploadedB__59063A47" Association="SeedSpeakDbModel.Store.FK__Media__uploadedB__59063A47">
+      <End Role="Member" EntitySet="Member" />
+      <End Role="Media" EntitySet="Media" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Member__roleId__173876EA" Association="SeedSpeakDbModel.Store.FK__Member__roleId__173876EA">
+      <End Role="Role" EntitySet="Role" />
+      <End Role="Member" EntitySet="Member" />
+    </AssociationSet>
+    <AssociationSet Name="FK__MemberPro__locat__300424B4" Association="SeedSpeakDbModel.Store.FK__MemberPro__locat__300424B4">
+      <End Role="Location" EntitySet="Location" />
+      <End Role="MemberProfile" EntitySet="MemberProfile" />
+    </AssociationSet>
+    <AssociationSet Name="FK__MemberPro__locat__7D439ABD" Association="SeedSpeakDbModel.Store.FK__MemberPro__locat__7D439ABD">
+      <End Role="Location" EntitySet="Location" />
+      <End Role="MemberProfile" EntitySet="MemberProfile" />
+    </AssociationSet>
+    <AssociationSet Name="FK__MemberPro__membe__2F10007B" Association="SeedSpeakDbModel.Store.FK__MemberPro__membe__2F10007B">
+      <End Role="Member" EntitySet="Member" />
+      <End Role="MemberProfile" EntitySet="MemberProfile" />
+    </AssociationSet>
+    <AssociationSet Name="FK__MemberPro__membe__7E37BEF6" Association="SeedSpeakDbModel.Store.FK__MemberPro__membe__7E37BEF6">
+      <End Role="Member" EntitySet="Member" />
+      <End Role="MemberProfile" EntitySet="MemberProfile" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Privacy__memberI__3A81B327" Association="SeedSpeakDbModel.Store.FK__Privacy__memberI__3A81B327">
+      <End Role="Member" EntitySet="Member" />
+      <End Role="Privacy" EntitySet="Privacy" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Rating__memberId__73BA3083" Association="SeedSpeakDbModel.Store.FK__Rating__memberId__73BA3083">
+      <End Role="Member" EntitySet="Member" />
+      <End Role="Rating" EntitySet="Rating" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Rating__seedId__72C60C4A" Association="SeedSpeakDbModel.Store.FK__Rating__seedId__72C60C4A">
+      <End Role="Seed" EntitySet="Seed" />
+      <End Role="Rating" EntitySet="Rating" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Region__countryI__07020F21" Association="SeedSpeakDbModel.Store.FK__Region__countryI__07020F21">
+      <End Role="Country" EntitySet="Country" />
+      <End Role="Region" EntitySet="Region" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Seed__locationId__45F365D3" Association="SeedSpeakDbModel.Store.FK__Seed__locationId__45F365D3">
+      <End Role="Location" EntitySet="Location" />
+      <End Role="Seed" EntitySet="Seed" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Seed__ownerId__46E78A0C" Association="SeedSpeakDbModel.Store.FK__Seed__ownerId__46E78A0C">
+      <End Role="Member" EntitySet="Member" />
+      <End Role="Seed" EntitySet="Seed" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Seed_has___categ__52593CB8" Association="SeedSpeakDbModel.Store.FK__Seed_has___categ__52593CB8">
+      <End Role="Category" EntitySet="Category" />
+      <End Role="Seed_has_Category" EntitySet="Seed_has_Category" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Seed_has___seedI__5165187F" Association="SeedSpeakDbModel.Store.FK__Seed_has___seedI__5165187F">
+      <End Role="Seed" EntitySet="Seed" />
+      <End Role="Seed_has_Category" EntitySet="Seed_has_Category" />
+    </AssociationSet>
+    <AssociationSet Name="FK__SubCatego__child__239E4DCF" Association="SeedSpeakDbModel.Store.FK__SubCatego__child__239E4DCF">
+      <End Role="Category" EntitySet="Category" />
+      <End Role="SubCategory" EntitySet="SubCategory" />
+    </AssociationSet>
+    <AssociationSet Name="FK__SubCatego__paren__22AA2996" Association="SeedSpeakDbModel.Store.FK__SubCatego__paren__22AA2996">
+      <End Role="Category" EntitySet="Category" />
+      <End Role="SubCategory" EntitySet="SubCategory" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Tag__seedId__4CA06362" Association="SeedSpeakDbModel.Store.FK__Tag__seedId__4CA06362">
+      <End Role="Seed" EntitySet="Seed" />
+      <End Role="Tag" EntitySet="Tag" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FollowPeople_Member" Association="SeedSpeakDbModel.Store.FK_FollowPeople_Member">
+      <End Role="Member" EntitySet="Member" />
+      <End Role="FollowPeople" EntitySet="FollowPeople" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FollowPeople_Member1" Association="SeedSpeakDbModel.Store.FK_FollowPeople_Member1">
+      <End Role="Member" EntitySet="Member" />
+      <End Role="FollowPeople" EntitySet="FollowPeople" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HideUnhide_Member" Association="SeedSpeakDbModel.Store.FK_HideUnhide_Member">
+      <End Role="Member" EntitySet="Member" />
+      <End Role="HideUnhide" EntitySet="HideUnhide" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HideUnhide_Seed" Association="SeedSpeakDbModel.Store.FK_HideUnhide_Seed">
+      <End Role="Seed" EntitySet="Seed" />
+      <End Role="HideUnhide" EntitySet="HideUnhide" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MemberReplySeeds_Member" Association="SeedSpeakDbModel.Store.FK_MemberReplySeeds_Member">
+      <End Role="Member" EntitySet="Member" />
+      <End Role="MemberReplySeeds" EntitySet="MemberReplySeeds" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MemberReplySeeds_Seed" Association="SeedSpeakDbModel.Store.FK_MemberReplySeeds_Seed">
+      <End Role="Seed" EntitySet="Seed" />
+      <End Role="MemberReplySeeds" EntitySet="MemberReplySeeds" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MutePeople_Member" Association="SeedSpeakDbModel.Store.FK_MutePeople_Member">
+      <End Role="Member" EntitySet="Member" />
+      <End Role="MutePeople" EntitySet="MutePeople" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MutePeople_Member1" Association="SeedSpeakDbModel.Store.FK_MutePeople_Member1">
+      <End Role="Member" EntitySet="Member" />
+      <End Role="MutePeople" EntitySet="MutePeople" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Seed_ParentSeed" Association="SeedSpeakDbModel.Store.FK_Seed_ParentSeed">
+      <End Role="Seed" EntitySet="Seed" />
+      <End Role="Seed1" EntitySet="Seed" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ssStream_has_Category_Category" Association="SeedSpeakDbModel.Store.FK_ssStream_has_Category_Category">
+      <End Role="Category" EntitySet="Category" />
+      <End Role="ssStream_has_Category" EntitySet="ssStream_has_Category" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ssStream_has_Category_ssStream" Association="SeedSpeakDbModel.Store.FK_ssStream_has_Category_ssStream">
+      <End Role="ssStream" EntitySet="ssStream" />
+      <End Role="ssStream_has_Category" EntitySet="ssStream_has_Category" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Stream_has_Seeds_Seed" Association="SeedSpeakDbModel.Store.FK_Stream_has_Seeds_Seed">
+      <End Role="Seed" EntitySet="Seed" />
+      <End Role="ssStream_has_Seeds" EntitySet="ssStream_has_Seeds" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Stream_has_Seeds_Stream" Association="SeedSpeakDbModel.Store.FK_Stream_has_Seeds_Stream">
+      <End Role="ssStream" EntitySet="ssStream" />
+      <End Role="ssStream_has_Seeds" EntitySet="ssStream_has_Seeds" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Stream_Location" Association="SeedSpeakDbModel.Store.FK_Stream_Location">
+      <End Role="Location" EntitySet="Location" />
+      <End Role="ssStream" EntitySet="ssStream" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Stream_Member" Association="SeedSpeakDbModel.Store.FK_Stream_Member">
+      <End Role="Member" EntitySet="Member" />
+      <End Role="ssStream" EntitySet="ssStream" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Bookmark">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="seedId" Type="uniqueidentifier" />
+    <Property Name="memberId" Type="uniqueidentifier" />
+  </EntityType>
+  <EntityType Name="Category">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="name" Type="varchar" MaxLength="100" />
+    <Property Name="status" Type="varchar" MaxLength="45" />
+    <Property Name="requestedById" Type="uniqueidentifier" />
+  </EntityType>
+  <EntityType Name="City">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="code" Type="varchar" MaxLength="100" />
+    <Property Name="name" Type="varchar" MaxLength="100" />
+    <Property Name="latitude" Type="float" />
+    <Property Name="longitude" Type="float" />
+    <Property Name="regionId" Type="uniqueidentifier" />
+  </EntityType>
+  <EntityType Name="Comment">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="commentDate" Type="datetime" />
+    <Property Name="msg" Type="varchar" MaxLength="500" />
+    <Property Name="seedId" Type="uniqueidentifier" />
+    <Property Name="commentById" Type="uniqueidentifier" />
+    <Property Name="isRead" Type="bit" />
+  </EntityType>
+  <EntityType Name="Commitment">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="commitDate" Type="datetime" />
+    <Property Name="deadline" Type="datetime" />
+    <Property Name="memberId" Type="uniqueidentifier" />
+    <Property Name="seedId" Type="uniqueidentifier" />
+    <Property Name="status" Type="varchar" MaxLength="45" />
+    <Property Name="msg" Type="varchar" MaxLength="500" />
+    <Property Name="isRead" Type="bit" />
+  </EntityType>
+  <EntityType Name="Config">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="name" Type="varchar" MaxLength="45" />
+    <Property Name="value" Type="varchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="Content">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="TypeID" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="Value1" Type="text" />
+    <Property Name="Value2" Type="text" />
+  </EntityType>
+  <EntityType Name="Country">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="code" Type="varchar" MaxLength="5" />
+    <Property Name="name" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="ExternalAccounts">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="accountTye" Type="varchar" MaxLength="45" />
+    <Property Name="username" Type="varchar" MaxLength="45" />
+    <Property Name="passwd" Type="varchar" MaxLength="45" />
+    <Property Name="verified" Type="bit" />
+    <Property Name="memberId" Type="uniqueidentifier" />
+  </EntityType>
+  <EntityType Name="Flag">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="dateFlagged" Type="datetime" />
+    <Property Name="seedId" Type="uniqueidentifier" />
+    <Property Name="flaggedById" Type="uniqueidentifier" />
+    <Property Name="reason" Type="varchar" MaxLength="500" />
+    <Property Name="isRead" Type="bit" />
+    <Property Name="isSpam" Type="bit" />
+    <Property Name="isWrongCategory" Type="bit" />
+    <Property Name="isProhibited" Type="bit" />
+    <Property Name="isOther" Type="bit" />
+  </EntityType>
+  <EntityType Name="FollowPeople">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="memberId" Type="uniqueidentifier" />
+    <Property Name="followingId" Type="uniqueidentifier" />
+  </EntityType>
+  <EntityType Name="HideUnhide">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="memId" Type="uniqueidentifier" />
+    <Property Name="seedId" Type="uniqueidentifier" />
+  </EntityType>
+  <EntityType Name="Location">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="cityId" Type="uniqueidentifier" />
+    <Property Name="zipcode" Type="varchar" MaxLength="15" />
+    <Property Name="localLat" Type="float" />
+    <Property Name="localLong" Type="float" />
+    <Property Name="crossStreet" Type="varchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="Media">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="title" Type="varchar" MaxLength="100" />
+    <Property Name="dateUploaded" Type="datetime" />
+    <Property Name="seedId" Type="uniqueidentifier" />
+    <Property Name="uploadedById" Type="uniqueidentifier" />
+    <Property Name="type" Type="varchar" MaxLength="45" />
+    <Property Name="path" Type="varchar" MaxLength="200" />
+    <Property Name="embedScript" Type="varchar" MaxLength="2000" />
+  </EntityType>
+  <EntityType Name="Member">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="username" Type="varchar" MaxLength="100" />
+    <Property Name="passwd" Type="varchar" MaxLength="45" />
+    <Property Name="firstName" Type="varchar" MaxLength="100" />
+    <Property Name="lastName" Type="varchar" MaxLength="100" />
+    <Property Name="status" Type="varchar" MaxLength="45" />
+    <Property Name="created" Type="datetime" />
+    <Property Name="lastLogin" Type="datetime" />
+    <Property Name="roleId" Type="uniqueidentifier" />
+    <Property Name="secretQ" Type="varchar" MaxLength="200" />
+    <Property Name="secretA" Type="varchar" MaxLength="100" />
+    <Property Name="isVerified" Type="bit" />
+    <Property Name="organisationName" Type="varchar" MaxLength="200" />
+    <Property Name="Email" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="MemberProfile">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="sex" Type="varchar" MaxLength="6" />
+    <Property Name="dob" Type="datetime" />
+    <Property Name="memberId" Type="uniqueidentifier" />
+    <Property Name="locationId" Type="uniqueidentifier" />
+    <Property Name="imagePath" Type="varchar" MaxLength="500" />
+    <Property Name="setURL" Type="varchar" MaxLength="500" />
+    <Property Name="bio" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="MemberReplySeeds">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="memberID" Type="uniqueidentifier" />
+    <Property Name="seedID" Type="uniqueidentifier" />
+  </EntityType>
+  <EntityType Name="Messages">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="type" Type="varchar" MaxLength="50" />
+    <Property Name="displayMessage" Type="varchar" MaxLength="500" />
+    <Property Name="typeId" Type="int" />
+  </EntityType>
+  <EntityType Name="MutePeople">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="memberId" Type="uniqueidentifier" />
+    <Property Name="muteId" Type="uniqueidentifier" />
+  </EntityType>
+  <EntityType Name="Privacy">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="memberId" Type="uniqueidentifier" />
+    <Property Name="viewUsername" Type="varchar" MaxLength="45" />
+    <Property Name="seedContribution" Type="varchar" MaxLength="45" />
+    <Property Name="seedCommitment" Type="varchar" MaxLength="45" />
+    <Property Name="viewLocation" Type="bit" />
+    <Property Name="webNotification" Type="bit" />
+    <Property Name="devicePush" Type="bit" />
+    <Property Name="emailNotification" Type="bit" />
+    <Property Name="autoTweet" Type="bit" />
+  </EntityType>
+  <EntityType Name="Rating">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="likes" Type="varchar" MaxLength="5" />
+    <Property Name="seedId" Type="uniqueidentifier" />
+    <Property Name="memberId" Type="uniqueidentifier" />
+    <Property Name="isRead" Type="bit" />
+    <Property Name="ratingDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Region">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="code" Type="varchar" MaxLength="5" />
+    <Property Name="name" Type="varchar" MaxLength="100" />
+    <Property Name="countryId" Type="uniqueidentifier" />
+  </EntityType>
+  <EntityType Name="Role">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="name" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="Seed">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="title" Type="varchar" MaxLength="200" />
+    <Property Name="description" Type="varchar" MaxLength="1000" />
+    <Property Name="locationId" Type="uniqueidentifier" />
+    <Property Name="ownerId" Type="uniqueidentifier" />
+    <Property Name="createDate" Type="datetime" />
+    <Property Name="status" Type="varchar" MaxLength="45" />
+    <Property Name="parentSeedID" Type="uniqueidentifier" />
+    <Property Name="rootSeedID" Type="uniqueidentifier" />
+    <Property Name="seedDistance" Type="int" />
+  </EntityType>
+  <EntityType Name="Seed_has_Category">
+    <Key>
+      <PropertyRef Name="seedId" />
+      <PropertyRef Name="categoryId" />
+    </Key>
+    <Property Name="seedId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="categoryId" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ssStream">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="title" Type="varchar" MaxLength="200" />
+    <Property Name="description" Type="varchar" MaxLength="1000" />
+    <Property Name="criteria" Type="varchar(max)" />
+    <Property Name="streamType" Type="varchar" MaxLength="10" />
+    <Property Name="ownerId" Type="uniqueidentifier" />
+    <Property Name="locationId" Type="uniqueidentifier" />
+    <Property Name="isPublic" Type="bit" />
+    <Property Name="createDate" Type="datetime" />
+    <Property Name="status" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="ssStream_has_Category">
+    <Key>
+      <PropertyRef Name="streamId" />
+      <PropertyRef Name="categoryId" />
+    </Key>
+    <Property Name="streamId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="categoryId" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ssStream_has_Seeds">
+    <Key>
+      <PropertyRef Name="streamId" />
+      <PropertyRef Name="seedId" />
+    </Key>
+    <Property Name="streamId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="seedId" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SubCategory">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="parentId" Type="uniqueidentifier" />
+    <Property Name="childId" Type="uniqueidentifier" />
+  </EntityType>
+  <EntityType Name="Tag">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="name" Type="varchar" MaxLength="100" />
+    <Property Name="seedId" Type="uniqueidentifier" />
+  </EntityType>
+  <Association Name="FK__Bookmark__member__7A672E12">
+    <End Role="Member" Type="SeedSpeakDbModel.Store.Member" Multiplicity="0..1" />
+    <End Role="Bookmark" Type="SeedSpeakDbModel.Store.Bookmark" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Member">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Bookmark">
+        <PropertyRef Name="memberId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Bookmark__seedId__797309D9">
+    <End Role="Seed" Type="SeedSpeakDbModel.Store.Seed" Multiplicity="0..1" />
+    <End Role="Bookmark" Type="SeedSpeakDbModel.Store.Bookmark" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Seed">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Bookmark">
+        <PropertyRef Name="seedId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Category__reques__1CF15040">
+    <End Role="Member" Type="SeedSpeakDbModel.Store.Member" Multiplicity="0..1" />
+    <End Role="Category" Type="SeedSpeakDbModel.Store.Category" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Member">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Category">
+        <PropertyRef Name="requestedById" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__City__regionId__0CBAE877">
+    <End Role="Region" Type="SeedSpeakDbModel.Store.Region" Multiplicity="0..1" />
+    <End Role="City" Type="SeedSpeakDbModel.Store.City" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Region">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="City">
+        <PropertyRef Name="regionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Comment__comment__66603565">
+    <End Role="Member" Type="SeedSpeakDbModel.Store.Member" Multiplicity="0..1" />
+    <End Role="Comment" Type="SeedSpeakDbModel.Store.Comment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Member">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Comment">
+        <PropertyRef Name="commentById" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Comment__seedId__656C112C">
+    <End Role="Seed" Type="SeedSpeakDbModel.Store.Seed" Multiplicity="0..1" />
+    <End Role="Comment" Type="SeedSpeakDbModel.Store.Comment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Seed">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Comment">
+        <PropertyRef Name="seedId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Commitmen__membe__123EB7A3">
+    <End Role="Member" Type="SeedSpeakDbModel.Store.Member" Multiplicity="0..1" />
+    <End Role="Commitment" Type="SeedSpeakDbModel.Store.Commitment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Member">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Commitment">
+        <PropertyRef Name="memberId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Commitmen__membe__5EBF139D">
+    <End Role="Member" Type="SeedSpeakDbModel.Store.Member" Multiplicity="0..1" />
+    <End Role="Commitment" Type="SeedSpeakDbModel.Store.Commitment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Member">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Commitment">
+        <PropertyRef Name="memberId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Commitmen__seedI__1332DBDC">
+    <End Role="Seed" Type="SeedSpeakDbModel.Store.Seed" Multiplicity="0..1" />
+    <End Role="Commitment" Type="SeedSpeakDbModel.Store.Commitment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Seed">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Commitment">
+        <PropertyRef Name="seedId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Commitmen__seedI__5FB337D6">
+    <End Role="Seed" Type="SeedSpeakDbModel.Store.Seed" Multiplicity="0..1" />
+    <End Role="Commitment" Type="SeedSpeakDbModel.Store.Commitment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Seed">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Commitment">
+        <PropertyRef Name="seedId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ExternalA__membe__403A8C7D">
+    <End Role="Member" Type="SeedSpeakDbModel.Store.Member" Multiplicity="0..1" />
+    <End Role="ExternalAccounts" Type="SeedSpeakDbModel.Store.ExternalAccounts" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Member">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="ExternalAccounts">
+        <PropertyRef Name="memberId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Flag__flaggedByI__6D0D32F4">
+    <End Role="Member" Type="SeedSpeakDbModel.Store.Member" Multiplicity="0..1" />
+    <End Role="Flag" Type="SeedSpeakDbModel.Store.Flag" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Member">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Flag">
+        <PropertyRef Name="flaggedById" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Flag__seedId__6C190EBB">
+    <End Role="Seed" Type="SeedSpeakDbModel.Store.Seed" Multiplicity="0..1" />
+    <End Role="Flag" Type="SeedSpeakDbModel.Store.Flag" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Seed">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Flag">
+        <PropertyRef Name="seedId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Location__cityId__29572725">
+    <End Role="City" Type="SeedSpeakDbModel.Store.City" Multiplicity="0..1" />
+    <End Role="Location" Type="SeedSpeakDbModel.Store.Location" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="City">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Location">
+        <PropertyRef Name="cityId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Media__seedId__5812160E">
+    <End Role="Seed" Type="SeedSpeakDbModel.Store.Seed" Multiplicity="0..1" />
+    <End Role="Media" Type="SeedSpeakDbModel.Store.Media" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Seed">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Media">
+        <PropertyRef Name="seedId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Media__uploadedB__59063A47">
+    <End Role="Member" Type="SeedSpeakDbModel.Store.Member" Multiplicity="0..1" />
+    <End Role="Media" Type="SeedSpeakDbModel.Store.Media" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Member">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Media">
+        <PropertyRef Name="uploadedById" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Member__roleId__173876EA">
+    <End Role="Role" Type="SeedSpeakDbModel.Store.Role" Multiplicity="0..1" />
+    <End Role="Member" Type="SeedSpeakDbModel.Store.Member" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Role">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Member">
+        <PropertyRef Name="roleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__MemberPro__locat__300424B4">
+    <End Role="Location" Type="SeedSpeakDbModel.Store.Location" Multiplicity="0..1" />
+    <End Role="MemberProfile" Type="SeedSpeakDbModel.Store.MemberProfile" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Location">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="MemberProfile">
+        <PropertyRef Name="locationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__MemberPro__locat__7D439ABD">
+    <End Role="Location" Type="SeedSpeakDbModel.Store.Location" Multiplicity="0..1" />
+    <End Role="MemberProfile" Type="SeedSpeakDbModel.Store.MemberProfile" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Location">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="MemberProfile">
+        <PropertyRef Name="locationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__MemberPro__membe__2F10007B">
+    <End Role="Member" Type="SeedSpeakDbModel.Store.Member" Multiplicity="0..1" />
+    <End Role="MemberProfile" Type="SeedSpeakDbModel.Store.MemberProfile" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Member">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="MemberProfile">
+        <PropertyRef Name="memberId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__MemberPro__membe__7E37BEF6">
+    <End Role="Member" Type="SeedSpeakDbModel.Store.Member" Multiplicity="0..1" />
+    <End Role="MemberProfile" Type="SeedSpeakDbModel.Store.MemberProfile" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Member">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="MemberProfile">
+        <PropertyRef Name="memberId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Privacy__memberI__3A81B327">
+    <End Role="Member" Type="SeedSpeakDbModel.Store.Member" Multiplicity="0..1" />
+    <End Role="Privacy" Type="SeedSpeakDbModel.Store.Privacy" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Member">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Privacy">
+        <PropertyRef Name="memberId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Rating__memberId__73BA3083">
+    <End Role="Member" Type="SeedSpeakDbModel.Store.Member" Multiplicity="0..1" />
+    <End Role="Rating" Type="SeedSpeakDbModel.Store.Rating" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Member">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Rating">
+        <PropertyRef Name="memberId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Rating__seedId__72C60C4A">
+    <End Role="Seed" Type="SeedSpeakDbModel.Store.Seed" Multiplicity="0..1" />
+    <End Role="Rating" Type="SeedSpeakDbModel.Store.Rating" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Seed">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Rating">
+        <PropertyRef Name="seedId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Region__countryI__07020F21">
+    <End Role="Country" Type="SeedSpeakDbModel.Store.Country" Multiplicity="0..1" />
+    <End Role="Region" Type="SeedSpeakDbModel.Store.Region" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Country">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Region">
+        <PropertyRef Name="countryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Seed__locationId__45F365D3">
+    <End Role="Location" Type="SeedSpeakDbModel.Store.Location" Multiplicity="0..1" />
+    <End Role="Seed" Type="SeedSpeakDbModel.Store.Seed" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Location">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Seed">
+        <PropertyRef Name="locationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Seed__ownerId__46E78A0C">
+    <End Role="Member" Type="SeedSpeakDbModel.Store.Member" Multiplicity="0..1" />
+    <End Role="Seed" Type="SeedSpeakDbModel.Store.Seed" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Member">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Seed">
+        <PropertyRef Name="ownerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Seed_has___categ__52593CB8">
+    <End Role="Category" Type="SeedSpeakDbModel.Store.Category" Multiplicity="1" />
+    <End Role="Seed_has_Category" Type="SeedSpeakDbModel.Store.Seed_has_Category" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Category">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Seed_has_Category">
+        <PropertyRef Name="categoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Seed_has___seedI__5165187F">
+    <End Role="Seed" Type="SeedSpeakDbModel.Store.Seed" Multiplicity="1" />
+    <End Role="Seed_has_Category" Type="SeedSpeakDbModel.Store.Seed_has_Category" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Seed">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Seed_has_Category">
+        <PropertyRef Name="seedId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__SubCatego__child__239E4DCF">
+    <End Role="Category" Type="SeedSpeakDbModel.Store.Category" Multiplicity="0..1" />
+    <End Role="SubCategory" Type="SeedSpeakDbModel.Store.SubCategory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Category">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="SubCategory">
+        <PropertyRef Name="childId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__SubCatego__paren__22AA2996">
+    <End Role="Category" Type="SeedSpeakDbModel.Store.Category" Multiplicity="0..1" />
+    <End Role="SubCategory" Type="SeedSpeakDbModel.Store.SubCategory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Category">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="SubCategory">
+        <PropertyRef Name="parentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Tag__seedId__4CA06362">
+    <End Role="Seed" Type="SeedSpeakDbModel.Store.Seed" Multiplicity="0..1" />
+    <End Role="Tag" Type="SeedSpeakDbModel.Store.Tag" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Seed">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Tag">
+        <PropertyRef Name="seedId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FollowPeople_Member">
+    <End Role="Member" Type="SeedSpeakDbModel.Store.Member" Multiplicity="0..1" />
+    <End Role="FollowPeople" Type="SeedSpeakDbModel.Store.FollowPeople" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Member">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="FollowPeople">
+        <PropertyRef Name="memberId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FollowPeople_Member1">
+    <End Role="Member" Type="SeedSpeakDbModel.Store.Member" Multiplicity="0..1" />
+    <End Role="FollowPeople" Type="SeedSpeakDbModel.Store.FollowPeople" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Member">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="FollowPeople">
+        <PropertyRef Name="followingId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HideUnhide_Member">
+    <End Role="Member" Type="SeedSpeakDbModel.Store.Member" Multiplicity="0..1" />
+    <End Role="HideUnhide" Type="SeedSpeakDbModel.Store.HideUnhide" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Member">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="HideUnhide">
+        <PropertyRef Name="memId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HideUnhide_Seed">
+    <End Role="Seed" Type="SeedSpeakDbModel.Store.Seed" Multiplicity="0..1" />
+    <End Role="HideUnhide" Type="SeedSpeakDbModel.Store.HideUnhide" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Seed">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="HideUnhide">
+        <PropertyRef Name="seedId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MemberReplySeeds_Member">
+    <End Role="Member" Type="SeedSpeakDbModel.Store.Member" Multiplicity="0..1" />
+    <End Role="MemberReplySeeds" Type="SeedSpeakDbModel.Store.MemberReplySeeds" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Member">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="MemberReplySeeds">
+        <PropertyRef Name="memberID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MemberReplySeeds_Seed">
+    <End Role="Seed" Type="SeedSpeakDbModel.Store.Seed" Multiplicity="0..1" />
+    <End Role="MemberReplySeeds" Type="SeedSpeakDbModel.Store.MemberReplySeeds" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Seed">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="MemberReplySeeds">
+        <PropertyRef Name="seedID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MutePeople_Member">
+    <End Role="Member" Type="SeedSpeakDbModel.Store.Member" Multiplicity="0..1" />
+    <End Role="MutePeople" Type="SeedSpeakDbModel.Store.MutePeople" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Member">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="MutePeople">
+        <PropertyRef Name="memberId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MutePeople_Member1">
+    <End Role="Member" Type="SeedSpeakDbModel.Store.Member" Multiplicity="0..1" />
+    <End Role="MutePeople" Type="SeedSpeakDbModel.Store.MutePeople" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Member">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="MutePeople">
+        <PropertyRef Name="muteId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Seed_ParentSeed">
+    <End Role="Seed" Type="SeedSpeakDbModel.Store.Seed" Multiplicity="0..1" />
+    <End Role="Seed1" Type="SeedSpeakDbModel.Store.Seed" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Seed">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Seed1">
+        <PropertyRef Name="parentSeedID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ssStream_has_Category_Category">
+    <End Role="Category" Type="SeedSpeakDbModel.Store.Category" Multiplicity="1" />
+    <End Role="ssStream_has_Category" Type="SeedSpeakDbModel.Store.ssStream_has_Category" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Category">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="ssStream_has_Category">
+        <PropertyRef Name="categoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ssStream_has_Category_ssStream">
+    <End Role="ssStream" Type="SeedSpeakDbModel.Store.ssStream" Multiplicity="1" />
+    <End Role="ssStream_has_Category" Type="SeedSpeakDbModel.Store.ssStream_has_Category" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ssStream">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="ssStream_has_Category">
+        <PropertyRef Name="streamId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Stream_has_Seeds_Seed">
+    <End Role="Seed" Type="SeedSpeakDbModel.Store.Seed" Multiplicity="1" />
+    <End Role="ssStream_has_Seeds" Type="SeedSpeakDbModel.Store.ssStream_has_Seeds" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Seed">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="ssStream_has_Seeds">
+        <PropertyRef Name="seedId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Stream_has_Seeds_Stream">
+    <End Role="ssStream" Type="SeedSpeakDbModel.Store.ssStream" Multiplicity="1" />
+    <End Role="ssStream_has_Seeds" Type="SeedSpeakDbModel.Store.ssStream_has_Seeds" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ssStream">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="ssStream_has_Seeds">
+        <PropertyRef Name="streamId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Stream_Location">
+    <End Role="Location" Type="SeedSpeakDbModel.Store.Location" Multiplicity="0..1" />
+    <End Role="ssStream" Type="SeedSpeakDbModel.Store.ssStream" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Location">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="ssStream">
+        <PropertyRef Name="locationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Stream_Member">
+    <End Role="Member" Type="SeedSpeakDbModel.Store.Member" Multiplicity="0..1" />
+    <End Role="ssStream" Type="SeedSpeakDbModel.Store.ssStream" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Member">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="ssStream">
+        <PropertyRef Name="ownerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="Usp_CountTopSeedPlanters" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="usp_DyingSeeds" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="usp_GetCommentNotification" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="MemberID" Type="uniqueidentifier" Mode="In" />
+  </Function>
+  <Function Name="usp_GetCommitmentNotification" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="MemberID" Type="uniqueidentifier" Mode="In" />
+  </Function>
+  <Function Name="usp_GetFlagNotification" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="MemberID" Type="uniqueidentifier" Mode="In" />
+  </Function>
+  <Function Name="usp_GetLikeNotification" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="MemberID" Type="uniqueidentifier" Mode="In" />
+  </Function>
+  <Function Name="usp_GetNotification" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="MemberID" Type="uniqueidentifier" Mode="In" />
+  </Function>
+  <Function Name="usp_GetTopSeedPlanter" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="usp_Member" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="usp_SearchSeeds" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="criteria" Type="varchar(max)" Mode="In" />
+  </Function>
+  <Function Name="usp_TopGrowingSeed" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="usp_UserGrowingSeed" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+</Schema>

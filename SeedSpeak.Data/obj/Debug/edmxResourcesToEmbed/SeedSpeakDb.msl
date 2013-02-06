@@ -1,0 +1,435 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SeedSpeakDbModelStoreContainer" CdmEntityContainer="seedspeakdbEntities">
+    <EntitySetMapping Name="Bookmarks">
+      <EntityTypeMapping TypeName="SeedSpeakDbModel.Bookmark">
+        <MappingFragment StoreEntitySet="Bookmark">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="seedId" ColumnName="seedId" />
+          <ScalarProperty Name="memberId" ColumnName="memberId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Categories">
+      <EntityTypeMapping TypeName="SeedSpeakDbModel.Category">
+        <MappingFragment StoreEntitySet="Category">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="requestedById" ColumnName="requestedById" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Cities">
+      <EntityTypeMapping TypeName="SeedSpeakDbModel.City">
+        <MappingFragment StoreEntitySet="City">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="code" ColumnName="code" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="latitude" ColumnName="latitude" />
+          <ScalarProperty Name="longitude" ColumnName="longitude" />
+          <ScalarProperty Name="regionId" ColumnName="regionId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Comments">
+      <EntityTypeMapping TypeName="SeedSpeakDbModel.Comment">
+        <MappingFragment StoreEntitySet="Comment">
+          <ScalarProperty Name="isRead" ColumnName="isRead" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="commentDate" ColumnName="commentDate" />
+          <ScalarProperty Name="msg" ColumnName="msg" />
+          <ScalarProperty Name="seedId" ColumnName="seedId" />
+          <ScalarProperty Name="commentById" ColumnName="commentById" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Commitments">
+      <EntityTypeMapping TypeName="SeedSpeakDbModel.Commitment">
+        <MappingFragment StoreEntitySet="Commitment">
+          <ScalarProperty Name="isRead" ColumnName="isRead" />
+          <ScalarProperty Name="msg" ColumnName="msg" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="commitDate" ColumnName="commitDate" />
+          <ScalarProperty Name="deadline" ColumnName="deadline" />
+          <ScalarProperty Name="memberId" ColumnName="memberId" />
+          <ScalarProperty Name="seedId" ColumnName="seedId" />
+          <ScalarProperty Name="status" ColumnName="status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Configs">
+      <EntityTypeMapping TypeName="SeedSpeakDbModel.Config">
+        <MappingFragment StoreEntitySet="Config">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="value" ColumnName="value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Countries">
+      <EntityTypeMapping TypeName="SeedSpeakDbModel.Country">
+        <MappingFragment StoreEntitySet="Country">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="code" ColumnName="code" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ExternalAccounts">
+      <EntityTypeMapping TypeName="SeedSpeakDbModel.ExternalAccount">
+        <MappingFragment StoreEntitySet="ExternalAccounts">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="accountTye" ColumnName="accountTye" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="passwd" ColumnName="passwd" />
+          <ScalarProperty Name="verified" ColumnName="verified" />
+          <ScalarProperty Name="memberId" ColumnName="memberId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Flags">
+      <EntityTypeMapping TypeName="SeedSpeakDbModel.Flag">
+        <MappingFragment StoreEntitySet="Flag">
+          <ScalarProperty Name="isOther" ColumnName="isOther" />
+          <ScalarProperty Name="isProhibited" ColumnName="isProhibited" />
+          <ScalarProperty Name="isWrongCategory" ColumnName="isWrongCategory" />
+          <ScalarProperty Name="isSpam" ColumnName="isSpam" />
+          <ScalarProperty Name="isRead" ColumnName="isRead" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="dateFlagged" ColumnName="dateFlagged" />
+          <ScalarProperty Name="seedId" ColumnName="seedId" />
+          <ScalarProperty Name="flaggedById" ColumnName="flaggedById" />
+          <ScalarProperty Name="reason" ColumnName="reason" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Locations">
+      <EntityTypeMapping TypeName="SeedSpeakDbModel.Location">
+        <MappingFragment StoreEntitySet="Location">
+          <ScalarProperty Name="crossStreet" ColumnName="crossStreet" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="cityId" ColumnName="cityId" />
+          <ScalarProperty Name="zipcode" ColumnName="zipcode" />
+          <ScalarProperty Name="localLat" ColumnName="localLat" />
+          <ScalarProperty Name="localLong" ColumnName="localLong" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Media">
+      <EntityTypeMapping TypeName="SeedSpeakDbModel.Medium">
+        <MappingFragment StoreEntitySet="Media">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="dateUploaded" ColumnName="dateUploaded" />
+          <ScalarProperty Name="seedId" ColumnName="seedId" />
+          <ScalarProperty Name="uploadedById" ColumnName="uploadedById" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="path" ColumnName="path" />
+          <ScalarProperty Name="embedScript" ColumnName="embedScript" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Members">
+      <EntityTypeMapping TypeName="SeedSpeakDbModel.Member">
+        <MappingFragment StoreEntitySet="Member">
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="organisationName" ColumnName="organisationName" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="passwd" ColumnName="passwd" />
+          <ScalarProperty Name="firstName" ColumnName="firstName" />
+          <ScalarProperty Name="lastName" ColumnName="lastName" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="created" ColumnName="created" />
+          <ScalarProperty Name="lastLogin" ColumnName="lastLogin" />
+          <ScalarProperty Name="roleId" ColumnName="roleId" />
+          <ScalarProperty Name="secretQ" ColumnName="secretQ" />
+          <ScalarProperty Name="secretA" ColumnName="secretA" />
+          <ScalarProperty Name="isVerified" ColumnName="isVerified" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MemberProfiles">
+      <EntityTypeMapping TypeName="SeedSpeakDbModel.MemberProfile">
+        <MappingFragment StoreEntitySet="MemberProfile">
+          <ScalarProperty Name="bio" ColumnName="bio" />
+          <ScalarProperty Name="setURL" ColumnName="setURL" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="sex" ColumnName="sex" />
+          <ScalarProperty Name="dob" ColumnName="dob" />
+          <ScalarProperty Name="memberId" ColumnName="memberId" />
+          <ScalarProperty Name="locationId" ColumnName="locationId" />
+          <ScalarProperty Name="imagePath" ColumnName="imagePath" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Privacies">
+      <EntityTypeMapping TypeName="SeedSpeakDbModel.Privacy">
+        <MappingFragment StoreEntitySet="Privacy">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="memberId" ColumnName="memberId" />
+          <ScalarProperty Name="viewUsername" ColumnName="viewUsername" />
+          <ScalarProperty Name="seedContribution" ColumnName="seedContribution" />
+          <ScalarProperty Name="seedCommitment" ColumnName="seedCommitment" />
+          <ScalarProperty Name="viewLocation" ColumnName="viewLocation" />
+          <ScalarProperty Name="webNotification" ColumnName="webNotification" />
+          <ScalarProperty Name="devicePush" ColumnName="devicePush" />
+          <ScalarProperty Name="emailNotification" ColumnName="emailNotification" />
+          <ScalarProperty Name="autoTweet" ColumnName="autoTweet" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Ratings">
+      <EntityTypeMapping TypeName="SeedSpeakDbModel.Rating">
+        <MappingFragment StoreEntitySet="Rating">
+          <ScalarProperty Name="ratingDate" ColumnName="ratingDate" />
+          <ScalarProperty Name="isRead" ColumnName="isRead" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="likes" ColumnName="likes" />
+          <ScalarProperty Name="seedId" ColumnName="seedId" />
+          <ScalarProperty Name="memberId" ColumnName="memberId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Regions">
+      <EntityTypeMapping TypeName="SeedSpeakDbModel.Region">
+        <MappingFragment StoreEntitySet="Region">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="code" ColumnName="code" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="countryId" ColumnName="countryId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Roles">
+      <EntityTypeMapping TypeName="SeedSpeakDbModel.Role">
+        <MappingFragment StoreEntitySet="Role">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Seeds">
+      <EntityTypeMapping TypeName="SeedSpeakDbModel.Seed">
+        <MappingFragment StoreEntitySet="Seed">
+          <ScalarProperty Name="seedDistance" ColumnName="seedDistance" />
+          <ScalarProperty Name="rootSeedID" ColumnName="rootSeedID" />
+          <ScalarProperty Name="parentSeedID" ColumnName="parentSeedID" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="locationId" ColumnName="locationId" />
+          <ScalarProperty Name="ownerId" ColumnName="ownerId" />
+          <ScalarProperty Name="createDate" ColumnName="createDate" />
+          <ScalarProperty Name="status" ColumnName="status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SubCategories">
+      <EntityTypeMapping TypeName="SeedSpeakDbModel.SubCategory">
+        <MappingFragment StoreEntitySet="SubCategory">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="parentId" ColumnName="parentId" />
+          <ScalarProperty Name="childId" ColumnName="childId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tags">
+      <EntityTypeMapping TypeName="SeedSpeakDbModel.Tag">
+        <MappingFragment StoreEntitySet="Tag">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="seedId" ColumnName="seedId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="Seed_has_Category" TypeName="SeedSpeakDbModel.Seed_has_Category" StoreEntitySet="Seed_has_Category">
+      <EndProperty Name="Category">
+        <ScalarProperty Name="id" ColumnName="categoryId" />
+      </EndProperty>
+      <EndProperty Name="Seed">
+        <ScalarProperty Name="id" ColumnName="seedId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <FunctionImportMapping FunctionImportName="usp_UserGrowingSeed" FunctionName="SeedSpeakDbModel.Store.usp_UserGrowingSeed" />
+    <FunctionImportMapping FunctionImportName="usp_Member" FunctionName="SeedSpeakDbModel.Store.usp_Member">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SeedSpeakDbModel.MemberRole">
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="rolename" ColumnName="rolename" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="created" ColumnName="created" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Usp_GetTopSeedPlanter" FunctionName="SeedSpeakDbModel.Store.usp_GetTopSeedPlanter">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SeedSpeakDbModel.TopSeedPlanter">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="MemberName" ColumnName="MemberName" />
+          <ScalarProperty Name="SeedCount" ColumnName="SeedCount" />
+          <ScalarProperty Name="ImagePath" ColumnName="ImagePath" />
+          <ScalarProperty Name="organisationName" ColumnName="organisationName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_TopGrowingSeed" FunctionName="SeedSpeakDbModel.Store.usp_TopGrowingSeed">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SeedSpeakDbModel.TopGrowingSeed">
+          <ScalarProperty Name="seedId" ColumnName="seedId" />
+          <ScalarProperty Name="commentcount" ColumnName="commentcount" />
+          <ScalarProperty Name="title" ColumnName="title" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="Messages">
+      <EntityTypeMapping TypeName="SeedSpeakDbModel.Message">
+        <MappingFragment StoreEntitySet="Messages">
+          <ScalarProperty Name="typeId" ColumnName="typeId" />
+          <ScalarProperty Name="displayMessage" ColumnName="displayMessage" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="Usp_GetNotification" FunctionName="SeedSpeakDbModel.Store.usp_GetNotification">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SeedSpeakDbModel.Usp_GetNotification_Result">
+          <ScalarProperty Name="Notify" ColumnName="Notify" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetCommentNotification" FunctionName="SeedSpeakDbModel.Store.usp_GetCommentNotification">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SeedSpeakDbModel.usp_GetCommentNotification_Result">
+          <ScalarProperty Name="Notify" ColumnName="Notify" />
+          <ScalarProperty Name="commentDate" ColumnName="commentDate" />
+          <ScalarProperty Name="TotalCount" ColumnName="TotalCount" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="MemberID" ColumnName="MemberID" />
+          <ScalarProperty Name="SeedID" ColumnName="SeedID" />
+          <ScalarProperty Name="MemberName" ColumnName="MemberName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetCommitmentNotification" FunctionName="SeedSpeakDbModel.Store.usp_GetCommitmentNotification">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SeedSpeakDbModel.usp_GetCommitmentNotification_Result">
+          <ScalarProperty Name="Notify" ColumnName="Notify" />
+          <ScalarProperty Name="commitDate" ColumnName="commitDate" />
+          <ScalarProperty Name="TotalCount" ColumnName="TotalCount" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="MemberID" ColumnName="MemberID" />
+          <ScalarProperty Name="SeedID" ColumnName="SeedID" />
+          <ScalarProperty Name="MemberName" ColumnName="MemberName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetFlagNotification" FunctionName="SeedSpeakDbModel.Store.usp_GetFlagNotification">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SeedSpeakDbModel.usp_GetFlagNotification_Result">
+          <ScalarProperty Name="Notify" ColumnName="Notify" />
+          <ScalarProperty Name="dateFlagged" ColumnName="dateFlagged" />
+          <ScalarProperty Name="TotalCount" ColumnName="TotalCount" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="MemberID" ColumnName="MemberID" />
+          <ScalarProperty Name="SeedID" ColumnName="SeedID" />
+          <ScalarProperty Name="MemberName" ColumnName="MemberName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="Contents">
+      <EntityTypeMapping TypeName="SeedSpeakDbModel.Content">
+        <MappingFragment StoreEntitySet="Content">
+          <ScalarProperty Name="Value2" ColumnName="Value2" />
+          <ScalarProperty Name="Value1" ColumnName="Value1" />
+          <ScalarProperty Name="TypeID" ColumnName="TypeID" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="usp_SearchSeeds" FunctionName="SeedSpeakDbModel.Store.usp_SearchSeeds" />
+    <FunctionImportMapping FunctionImportName="usp_GetLikeNotification" FunctionName="SeedSpeakDbModel.Store.usp_GetLikeNotification">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SeedSpeakDbModel.usp_GetLikeNotification_Result">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="MemberID" ColumnName="MemberID" />
+          <ScalarProperty Name="SeedID" ColumnName="SeedID" />
+          <ScalarProperty Name="MemberName" ColumnName="MemberName" />
+          <ScalarProperty Name="Notify" ColumnName="Notify" />
+          <ScalarProperty Name="ratingDate" ColumnName="ratingDate" />
+          <ScalarProperty Name="TotalCount" ColumnName="TotalCount" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="MemberReplySeeds">
+      <EntityTypeMapping TypeName="SeedSpeakDbModel.MemberReplySeed">
+        <MappingFragment StoreEntitySet="MemberReplySeeds">
+          <ScalarProperty Name="seedID" ColumnName="seedID" />
+          <ScalarProperty Name="memberID" ColumnName="memberID" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ssStreams">
+      <EntityTypeMapping TypeName="SeedSpeakDbModel.ssStream">
+        <MappingFragment StoreEntitySet="ssStream">
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="createDate" ColumnName="createDate" />
+          <ScalarProperty Name="isPublic" ColumnName="isPublic" />
+          <ScalarProperty Name="locationId" ColumnName="locationId" />
+          <ScalarProperty Name="ownerId" ColumnName="ownerId" />
+          <ScalarProperty Name="streamType" ColumnName="streamType" />
+          <ScalarProperty Name="criteria" ColumnName="criteria" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="ssStream_has_Seeds" TypeName="SeedSpeakDbModel.ssStream_has_Seeds" StoreEntitySet="ssStream_has_Seeds">
+      <EndProperty Name="ssStream">
+        <ScalarProperty Name="id" ColumnName="streamId" />
+      </EndProperty>
+      <EndProperty Name="Seed">
+        <ScalarProperty Name="id" ColumnName="seedId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <EntitySetMapping Name="FollowPeoples">
+      <EntityTypeMapping TypeName="SeedSpeakDbModel.FollowPeople">
+        <MappingFragment StoreEntitySet="FollowPeople">
+          <ScalarProperty Name="followingId" ColumnName="followingId" />
+          <ScalarProperty Name="memberId" ColumnName="memberId" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MutePeoples">
+      <EntityTypeMapping TypeName="SeedSpeakDbModel.MutePeople">
+        <MappingFragment StoreEntitySet="MutePeople">
+          <ScalarProperty Name="muteId" ColumnName="muteId" />
+          <ScalarProperty Name="memberId" ColumnName="memberId" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HideUnhides">
+      <EntityTypeMapping TypeName="SeedSpeakDbModel.HideUnhide">
+        <MappingFragment StoreEntitySet="HideUnhide">
+          <ScalarProperty Name="seedId" ColumnName="seedId" />
+          <ScalarProperty Name="memId" ColumnName="memId" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="ssStream_has_Category" TypeName="SeedSpeakDbModel.ssStream_has_Category" StoreEntitySet="ssStream_has_Category">
+      <EndProperty Name="ssStream">
+        <ScalarProperty Name="id" ColumnName="streamId" />
+      </EndProperty>
+      <EndProperty Name="Category">
+        <ScalarProperty Name="id" ColumnName="categoryId" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

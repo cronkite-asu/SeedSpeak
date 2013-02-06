@@ -1,0 +1,4 @@
+C:\Users\MIcah\Desktop\SeedSpeak Web Final code\SeedSpeak Web Final code\SeedSpeak.Model\bin\Release\SeedSpeak.Model.dll
+C:\Users\MIcah\Desktop\SeedSpeak Web Final code\SeedSpeak Web Final code\SeedSpeak.Model\bin\Release\SeedSpeak.Model.pdb
+C:\Users\MIcah\Desktop\SeedSpeak Web Final code\SeedSpeak Web Final code\SeedSpeak.Model\obj\Release\SeedSpeak.Model.dll
+C:\Users\MIcah\Desktop\SeedSpeak Web Final code\SeedSpeak Web Final code\SeedSpeak.Model\obj\Release\SeedSpeak.Model.pdb

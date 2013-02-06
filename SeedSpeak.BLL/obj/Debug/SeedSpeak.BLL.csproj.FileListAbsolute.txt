@@ -1,0 +1,26 @@
+E:\SeedSpeak Tag\SeedSpeak.BLL\bin\Debug\SeedSpeak.BLL.dll
+E:\SeedSpeak Tag\SeedSpeak.BLL\bin\Debug\SeedSpeak.BLL.pdb
+E:\SeedSpeak Tag\SeedSpeak.BLL\bin\Debug\SeedSpeak.Data.dll
+E:\SeedSpeak Tag\SeedSpeak.BLL\bin\Debug\SeedSpeak.Model.dll
+E:\SeedSpeak Tag\SeedSpeak.BLL\bin\Debug\SeedSpeak.Util.dll
+E:\SeedSpeak Tag\SeedSpeak.BLL\bin\Debug\log4net.dll
+E:\SeedSpeak Tag\SeedSpeak.BLL\bin\Debug\SeedSpeak.Data.pdb
+E:\SeedSpeak Tag\SeedSpeak.BLL\bin\Debug\SeedSpeak.Model.pdb
+E:\SeedSpeak Tag\SeedSpeak.BLL\bin\Debug\SeedSpeak.Util.pdb
+E:\SeedSpeak Tag\SeedSpeak.BLL\obj\Debug\ResolveAssemblyReference.cache
+E:\SeedSpeak Tag\SeedSpeak.BLL\obj\Debug\SeedSpeak.BLL.dll
+E:\SeedSpeak Tag\SeedSpeak.BLL\obj\Debug\SeedSpeak.BLL.pdb
+C:\Users\MIcah\Desktop\SeedSpeak Web Final code\SeedSpeak Web Final code\SeedSpeak.BLL\bin\Debug\SeedSpeak.BLL.dll
+C:\Users\MIcah\Desktop\SeedSpeak Web Final code\SeedSpeak Web Final code\SeedSpeak.BLL\bin\Debug\SeedSpeak.BLL.pdb
+C:\Users\MIcah\Desktop\SeedSpeak Web Final code\SeedSpeak Web Final code\SeedSpeak.BLL\bin\Debug\SeedSpeak.Data.dll
+C:\Users\MIcah\Desktop\SeedSpeak Web Final code\SeedSpeak Web Final code\SeedSpeak.BLL\bin\Debug\SeedSpeak.Model.dll
+C:\Users\MIcah\Desktop\SeedSpeak Web Final code\SeedSpeak Web Final code\SeedSpeak.BLL\bin\Debug\SeedSpeak.Util.dll
+C:\Users\MIcah\Desktop\SeedSpeak Web Final code\SeedSpeak Web Final code\SeedSpeak.BLL\bin\Debug\log4net.dll
+C:\Users\MIcah\Desktop\SeedSpeak Web Final code\SeedSpeak Web Final code\SeedSpeak.BLL\bin\Debug\SeedSpeak.Data.pdb
+C:\Users\MIcah\Desktop\SeedSpeak Web Final code\SeedSpeak Web Final code\SeedSpeak.BLL\bin\Debug\SeedSpeak.Model.pdb
+C:\Users\MIcah\Desktop\SeedSpeak Web Final code\SeedSpeak Web Final code\SeedSpeak.BLL\bin\Debug\SeedSpeak.Util.pdb
+C:\Users\MIcah\Desktop\SeedSpeak Web Final code\SeedSpeak Web Final code\SeedSpeak.BLL\obj\Debug\SeedSpeak.BLL.csprojResolveAssemblyReference.cache
+C:\Users\MIcah\Desktop\SeedSpeak Web Final code\SeedSpeak Web Final code\SeedSpeak.BLL\obj\Debug\SeedSpeak.BLL.dll
+C:\Users\MIcah\Desktop\SeedSpeak Web Final code\SeedSpeak Web Final code\SeedSpeak.BLL\obj\Debug\SeedSpeak.BLL.pdb
+C:\Users\MIcah\Desktop\SeedSpeak Web Final code\SeedSpeak Web Final code\SeedSpeak.BLL\bin\Debug\ss.mdf
+C:\Users\MIcah\Desktop\SeedSpeak Web Final code\SeedSpeak Web Final code\SeedSpeak.BLL\bin\Debug\ss_log.ldf

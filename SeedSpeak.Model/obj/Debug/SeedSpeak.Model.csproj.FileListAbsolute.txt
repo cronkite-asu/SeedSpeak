@@ -1,0 +1,10 @@
+E:\SeedSpeak Tag\SeedSpeak.Model\bin\Debug\SeedSpeak.Model.dll
+E:\SeedSpeak Tag\SeedSpeak.Model\bin\Debug\SeedSpeak.Model.pdb
+E:\SeedSpeak Tag\SeedSpeak.Model\obj\Debug\ResolveAssemblyReference.cache
+E:\SeedSpeak Tag\SeedSpeak.Model\obj\Debug\SeedSpeak.Model.dll
+E:\SeedSpeak Tag\SeedSpeak.Model\obj\Debug\SeedSpeak.Model.pdb
+C:\Users\MIcah\Desktop\SeedSpeak Web Final code\SeedSpeak Web Final code\SeedSpeak.Model\bin\Debug\SeedSpeak.Model.dll
+C:\Users\MIcah\Desktop\SeedSpeak Web Final code\SeedSpeak Web Final code\SeedSpeak.Model\bin\Debug\SeedSpeak.Model.pdb
+C:\Users\MIcah\Desktop\SeedSpeak Web Final code\SeedSpeak Web Final code\SeedSpeak.Model\obj\Debug\SeedSpeak.Model.dll
+C:\Users\MIcah\Desktop\SeedSpeak Web Final code\SeedSpeak Web Final code\SeedSpeak.Model\obj\Debug\SeedSpeak.Model.pdb
+C:\Users\MIcah\Desktop\SeedSpeak Web Final code\SeedSpeak Web Final code\SeedSpeak.Model\obj\Debug\SeedSpeak.Model.csprojResolveAssemblyReference.cache

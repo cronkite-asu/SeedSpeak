@@ -1,0 +1,14 @@
+C:\Users\MIcah\Desktop\SeedSpeak Web Final code\SeedSpeak Web Final code\SeedSpeak.BLL\bin\Release\ss.mdf
+C:\Users\MIcah\Desktop\SeedSpeak Web Final code\SeedSpeak Web Final code\SeedSpeak.BLL\bin\Release\ss_log.ldf
+C:\Users\MIcah\Desktop\SeedSpeak Web Final code\SeedSpeak Web Final code\SeedSpeak.BLL\bin\Release\SeedSpeak.BLL.dll
+C:\Users\MIcah\Desktop\SeedSpeak Web Final code\SeedSpeak Web Final code\SeedSpeak.BLL\bin\Release\SeedSpeak.BLL.pdb
+C:\Users\MIcah\Desktop\SeedSpeak Web Final code\SeedSpeak Web Final code\SeedSpeak.BLL\bin\Release\SeedSpeak.Data.dll
+C:\Users\MIcah\Desktop\SeedSpeak Web Final code\SeedSpeak Web Final code\SeedSpeak.BLL\bin\Release\SeedSpeak.Model.dll
+C:\Users\MIcah\Desktop\SeedSpeak Web Final code\SeedSpeak Web Final code\SeedSpeak.BLL\bin\Release\SeedSpeak.Util.dll
+C:\Users\MIcah\Desktop\SeedSpeak Web Final code\SeedSpeak Web Final code\SeedSpeak.BLL\bin\Release\log4net.dll
+C:\Users\MIcah\Desktop\SeedSpeak Web Final code\SeedSpeak Web Final code\SeedSpeak.BLL\bin\Release\SeedSpeak.Data.pdb
+C:\Users\MIcah\Desktop\SeedSpeak Web Final code\SeedSpeak Web Final code\SeedSpeak.BLL\bin\Release\SeedSpeak.Model.pdb
+C:\Users\MIcah\Desktop\SeedSpeak Web Final code\SeedSpeak Web Final code\SeedSpeak.BLL\bin\Release\SeedSpeak.Util.pdb
+C:\Users\MIcah\Desktop\SeedSpeak Web Final code\SeedSpeak Web Final code\SeedSpeak.BLL\obj\Release\SeedSpeak.BLL.csprojResolveAssemblyReference.cache
+C:\Users\MIcah\Desktop\SeedSpeak Web Final code\SeedSpeak Web Final code\SeedSpeak.BLL\obj\Release\SeedSpeak.BLL.dll
+C:\Users\MIcah\Desktop\SeedSpeak Web Final code\SeedSpeak Web Final code\SeedSpeak.BLL\obj\Release\SeedSpeak.BLL.pdb

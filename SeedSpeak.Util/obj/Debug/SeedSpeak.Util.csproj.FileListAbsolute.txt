@@ -1,0 +1,12 @@
+E:\SeedSpeak Tag\SeedSpeak.Util\bin\Debug\SeedSpeak.Util.dll
+E:\SeedSpeak Tag\SeedSpeak.Util\bin\Debug\SeedSpeak.Util.pdb
+E:\SeedSpeak Tag\SeedSpeak.Util\bin\Debug\log4net.dll
+E:\SeedSpeak Tag\SeedSpeak.Util\obj\Debug\ResolveAssemblyReference.cache
+E:\SeedSpeak Tag\SeedSpeak.Util\obj\Debug\SeedSpeak.Util.dll
+E:\SeedSpeak Tag\SeedSpeak.Util\obj\Debug\SeedSpeak.Util.pdb
+C:\Users\MIcah\Desktop\SeedSpeak Web Final code\SeedSpeak Web Final code\SeedSpeak.Util\bin\Debug\SeedSpeak.Util.dll
+C:\Users\MIcah\Desktop\SeedSpeak Web Final code\SeedSpeak Web Final code\SeedSpeak.Util\bin\Debug\SeedSpeak.Util.pdb
+C:\Users\MIcah\Desktop\SeedSpeak Web Final code\SeedSpeak Web Final code\SeedSpeak.Util\bin\Debug\log4net.dll
+C:\Users\MIcah\Desktop\SeedSpeak Web Final code\SeedSpeak Web Final code\SeedSpeak.Util\obj\Debug\SeedSpeak.Util.dll
+C:\Users\MIcah\Desktop\SeedSpeak Web Final code\SeedSpeak Web Final code\SeedSpeak.Util\obj\Debug\SeedSpeak.Util.pdb
+C:\Users\MIcah\Desktop\SeedSpeak Web Final code\SeedSpeak Web Final code\SeedSpeak.Util\obj\Debug\SeedSpeak.Util.csprojResolveAssemblyReference.cache

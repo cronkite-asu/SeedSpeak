@@ -1,0 +1,30 @@
+E:\SeedSpeak Tag\SeedSpeakWebService\bin\SeedSpeakWebService.dll
+E:\SeedSpeak Tag\SeedSpeakWebService\bin\SeedSpeakWebService.pdb
+E:\SeedSpeak Tag\SeedSpeakWebService\bin\SeedSpeak.BLL.dll
+E:\SeedSpeak Tag\SeedSpeakWebService\bin\SeedSpeak.Data.dll
+E:\SeedSpeak Tag\SeedSpeakWebService\bin\SeedSpeak.Model.dll
+E:\SeedSpeak Tag\SeedSpeakWebService\bin\SeedSpeak.Util.dll
+E:\SeedSpeak Tag\SeedSpeakWebService\bin\log4net.dll
+E:\SeedSpeak Tag\SeedSpeakWebService\bin\SeedSpeak.BLL.pdb
+E:\SeedSpeak Tag\SeedSpeakWebService\bin\SeedSpeak.Data.pdb
+E:\SeedSpeak Tag\SeedSpeakWebService\bin\SeedSpeak.Model.pdb
+E:\SeedSpeak Tag\SeedSpeakWebService\bin\SeedSpeak.Util.pdb
+E:\SeedSpeak Tag\SeedSpeakWebService\obj\Debug\ResolveAssemblyReference.cache
+E:\SeedSpeak Tag\SeedSpeakWebService\obj\Debug\SeedSpeakWebService.dll
+E:\SeedSpeak Tag\SeedSpeakWebService\obj\Debug\SeedSpeakWebService.pdb
+C:\Users\MIcah\Desktop\SeedSpeak Web Final code\SeedSpeak Web Final code\SeedSpeakWebService\bin\SeedSpeakWebService.dll
+C:\Users\MIcah\Desktop\SeedSpeak Web Final code\SeedSpeak Web Final code\SeedSpeakWebService\bin\SeedSpeakWebService.pdb
+C:\Users\MIcah\Desktop\SeedSpeak Web Final code\SeedSpeak Web Final code\SeedSpeakWebService\bin\SeedSpeak.BLL.dll
+C:\Users\MIcah\Desktop\SeedSpeak Web Final code\SeedSpeak Web Final code\SeedSpeakWebService\bin\SeedSpeak.Data.dll
+C:\Users\MIcah\Desktop\SeedSpeak Web Final code\SeedSpeak Web Final code\SeedSpeakWebService\bin\SeedSpeak.Model.dll
+C:\Users\MIcah\Desktop\SeedSpeak Web Final code\SeedSpeak Web Final code\SeedSpeakWebService\bin\SeedSpeak.Util.dll
+C:\Users\MIcah\Desktop\SeedSpeak Web Final code\SeedSpeak Web Final code\SeedSpeakWebService\bin\log4net.dll
+C:\Users\MIcah\Desktop\SeedSpeak Web Final code\SeedSpeak Web Final code\SeedSpeakWebService\bin\SeedSpeak.BLL.pdb
+C:\Users\MIcah\Desktop\SeedSpeak Web Final code\SeedSpeak Web Final code\SeedSpeakWebService\bin\SeedSpeak.Data.pdb
+C:\Users\MIcah\Desktop\SeedSpeak Web Final code\SeedSpeak Web Final code\SeedSpeakWebService\bin\SeedSpeak.Model.pdb
+C:\Users\MIcah\Desktop\SeedSpeak Web Final code\SeedSpeak Web Final code\SeedSpeakWebService\bin\SeedSpeak.Util.pdb
+C:\Users\MIcah\Desktop\SeedSpeak Web Final code\SeedSpeak Web Final code\SeedSpeakWebService\obj\Debug\SeedSpeakWebService.csprojResolveAssemblyReference.cache
+C:\Users\MIcah\Desktop\SeedSpeak Web Final code\SeedSpeak Web Final code\SeedSpeakWebService\obj\Debug\SeedSpeakWebService.dll
+C:\Users\MIcah\Desktop\SeedSpeak Web Final code\SeedSpeak Web Final code\SeedSpeakWebService\obj\Debug\SeedSpeakWebService.pdb
+C:\Users\MIcah\Desktop\SeedSpeak Web Final code\SeedSpeak Web Final code\SeedSpeakWebService\bin\ss.mdf
+C:\Users\MIcah\Desktop\SeedSpeak Web Final code\SeedSpeak Web Final code\SeedSpeakWebService\bin\ss_log.ldf

@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="SeedSpeakWebService.SeedSpeakService" CodeBehind="SeedSpeakService.svc.cs" %>
