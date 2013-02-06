@@ -1,0 +1,196 @@
+﻿.container {
+	display: none;
+}
+#Main {
+	display: none;
+}
+.contenbtm, .brownHeader {
+	display: none;
+}
+body {
+	background-color: #fff;
+	/*background-image: url('images/subpgbg.jpg');
+	background-repeat: repeat-x;
+	background-position: center -6px;*/
+	margin: 0;
+	padding: 0;
+	height: 100%; 
+}
+#content {
+	width: 100%;
+	margin: auto;
+	padding: 0px;
+	border: 0px solid #000;
+	padding-bottom: 20px;
+	margin-bottom: 10px;
+}
+#wrapper {
+	width: 1004px;
+	padding: 0;
+	padding-bottom: 10px;
+	margin: auto;
+	border: 0px solid #000;
+	background: transparent;
+}
+#onecolumn {
+	float: left;
+	width: 972px;
+	border: 0px solid #000;
+	background: transparent;
+	margin: 0px;
+	padding: 0px;
+}
+#header {
+	display: none;
+	padding: 0;
+}
+#headsearch {
+	
+}
+ 
+
+.breadcrum {
+	float: left;
+	width: 99%;
+	height: 20px;
+	text-align: right;
+	color: #351b04;
+	font-size: 12px;
+}
+.breadcrum a {
+	padding: 0 10px;
+}
+.breadcrum a:visited {
+	color: #333;
+	font-size: 12px;
+}
+.breadcrum b {
+	padding-right: 10px;
+	background-image: url('images/seprater.gif');
+	background-repeat: no-repeat;
+	background-position: 0px 3px;
+}
+#subcontent {
+	
+	width: 970px;
+ 
+	border:0px solid red;
+ 
+	   float:left;
+ 
+	padding-top: 0px;
+	padding-bottom: 10px;
+	padding-left: 0px;
+	padding-right: 0px;
+ 
+}
+#subcontent strong {
+	color: #603913;
+	font-size: 30px;
+	border: 0px solid #000;
+	padding: 0px;
+}
+.subpgtext {
+	width: 100%;
+	margin: auto;
+	min-height: 600px;
+	color: #6a686f; 
+	font-size: 15px;
+}
+ .subpgtext p{
+	line-height:1.6; text-align:justify;
+}
+/*-------------------twocol steam pages---------------------------*/
+ 
+#pagewrapper{  float:left;table-layout:fixed; 
+
+	width:960px;margin:auto;display: block;margin-top:10px;
+}
+.leftcol{
+	width:176px;float:left;  padding:10px;
+}
+
+.fullwidth{
+	float:left;width:750px;  padding:10px;border: 1px solid #fff; background-color:white
+
+
+}
+.mapbox{
+	width:170px; border:1px solid red; height:180px; margin-bottom:10px;
+}
+.addbox{
+	width:170px; border:1px solid red;height:250px; margin-top:10px;
+
+}
+
+/*.plantgo {
+	width: 50px;
+	background-image: url('images/plantgobtn.png');
+	background-repeat: no-repeat;
+	background-position: -2px 0px;
+	font-size: 0px;
+	height: 35px;
+	margin-top: -2px;
+	background-color: transparent;
+	border: 0px solid #000;
+}*/
+ 
+    
+    em {
+	background-image: url('images/sprite_logincntrl.png');
+	background-repeat: no-repeat;
+	background-position: -135px -85px;
+	padding-left: 10px;
+	color: #a3180e;
+	padding-right: 10px;
+	font-size: 14px;
+	border: 0px solid #000;
+	font-weight: 600;
+	text-indent: 5px;
+	font-style: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.t-icon {
+    background-image: url("images/spriteWB.png");
+}
+.t-header .t-arrow-up, .t-state-hover .t-arrow-up {
+    background-position: -48px -160px;}
+.t-header .t-arrow-down, .t-state-hover .t-arrow-down {
+    background-position: -48px -176px;
+}
+.t-panelbar .t-header {
+    background-image: url("images/faqbg.png") !important;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    color: #494949;
+    font-size: 18px;
+    line-height: 2.8;
+    text-align: left;
+    width: 971px;
+    margin:10px 0;
+}
+.t-panelbar div.t-content p {
+    color: #6A686F;
+    font-size: 15px;
+    margin: auto;
+    padding: 10px 8px 12px;
+    text-align: justify;
+    width: 95%;
+}
+
+

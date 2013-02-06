@@ -1,0 +1,58 @@
+﻿/*
+ * jQuery UI CSS Framework @VERSION
+ *
+ * Copyright 2010, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Theming/API
+ */
+
+/* Layout helpers
+----------------------------------*/
+.ui-helper-hidden { display: none; }
+.ui-helper-hidden-accessible { position: absolute; left: -99999999px; }
+.ui-helper-reset { margin: 0; padding: 0; border: 0; outline: 0; line-height: 1.3; text-decoration: none; font-size: 100%; list-style: none; }
+.ui-helper-clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.ui-helper-clearfix { display: inline-block; }
+/* required comment for clearfix to work in Opera \*/
+* html .ui-helper-clearfix { height:1%; }
+.ui-helper-clearfix { display:block; }
+/* end clearfix */
+.ui-helper-zfix { width: 100%; height: 100%; top: 0; left: 0; position: absolute; opacity: 0; filter:Alpha(Opacity=0); }
+
+
+/* Interaction Cues
+----------------------------------*/
+.ui-state-disabled { cursor: default !important; }
+
+
+/* Icons
+----------------------------------*/
+
+/* states and images */
+.ui-icon { display: block; text-indent: -99999px; overflow: hidden; background-repeat: no-repeat; }
+
+
+/* Misc visuals
+----------------------------------*/
+
+/* Overlays */
+.ui-widget-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+
+    .projectbg
+        {border-top: 1px solid #CEDADF; float: left; font-family: 'LucidaGrandeRegular'; margin: 0 0 0; padding: 10px 0 0 0; /*width: 420px;*/  width: 445px; }
+    .projectthumnail
+	    {width:50px; height:50px; float:left; margin-right:12px; padding:0px; }
+    .projecttxtblank
+	    {float:left; margin:0px 0 0 0; padding:0px 0 5 0; /*width:350px;*/ width:380px;}
+    .projecttxt
+	    {float:left; margin:0px; font-size:13px; color:#636363; width:100%; word-wrap: break-word; text-align:justify}
+    .projectboldtxt a
+	    {font-size:13px; font-weight:bold; color:#2A8D54;}
+    .projectdate
+	    {font-size:11px; font-weight:bold; color:#A9A8A8; float:left; margin:0px; width:100%;  }
+	    
+	    
+	

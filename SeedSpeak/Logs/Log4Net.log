@@ -1,0 +1,117 @@
+2012-10-02 14:29:44,222 [1196] MICAH-HP [(null)] ERROR File **********************
+2012-10-02 14:29:44,236 [1196] MICAH-HP [(null)] ERROR File The underlying provider failed on Open.
+2012-10-02 14:29:44,240 [1196] MICAH-HP [(null)] ERROR File    at System.Data.EntityClient.EntityConnection.OpenStoreConnectionIf(Boolean openCondition, DbConnection storeConnectionToOpen, DbConnection originalConnection, String exceptionCode, String attemptedOperation, Boolean& closeStoreConnectionOnFailure)
+   at System.Data.EntityClient.EntityConnection.Open()
+   at System.Data.Objects.ObjectContext.EnsureConnection()
+   at System.Data.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Objects.ObjectQuery`1.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__1[TResult](IEnumerable`1 sequence)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[S](Expression expression)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source)
+   at SeedSpeak.BLL.MemberAction.FindUserIdByURL(String url) in C:\Users\MIcah\Desktop\SeedSpeak Web Final code\SeedSpeak Web Final code\SeedSpeak.BLL\MemberAction.cs:line 1268
+2012-10-02 17:30:39,376 [3512] MICAH-HP [(null)] ERROR File **********************
+2012-10-02 17:30:39,395 [3512] MICAH-HP [(null)] ERROR File The underlying provider failed on Open.
+2012-10-02 17:30:39,398 [3512] MICAH-HP [(null)] ERROR File    at System.Data.EntityClient.EntityConnection.OpenStoreConnectionIf(Boolean openCondition, DbConnection storeConnectionToOpen, DbConnection originalConnection, String exceptionCode, String attemptedOperation, Boolean& closeStoreConnectionOnFailure)
+   at System.Data.EntityClient.EntityConnection.Open()
+   at System.Data.Objects.ObjectContext.EnsureConnection()
+   at System.Data.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Objects.ObjectQuery`1.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__1[TResult](IEnumerable`1 sequence)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[S](Expression expression)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source)
+   at SeedSpeak.BLL.MemberAction.FindUserIdByURL(String url) in C:\Users\MIcah\Desktop\SeedSpeak Web Final code\SeedSpeak Web Final code\SeedSpeak.BLL\MemberAction.cs:line 1268
+2012-10-02 17:34:28,406 [6140] MICAH-HP [(null)] ERROR File **********************
+2012-10-02 17:34:28,406 [6140] MICAH-HP [(null)] ERROR File The underlying provider failed on Open.
+2012-10-02 17:34:28,406 [6140] MICAH-HP [(null)] ERROR File    at System.Data.EntityClient.EntityConnection.OpenStoreConnectionIf(Boolean openCondition, DbConnection storeConnectionToOpen, DbConnection originalConnection, String exceptionCode, String attemptedOperation, Boolean& closeStoreConnectionOnFailure)
+   at System.Data.EntityClient.EntityConnection.Open()
+   at System.Data.Objects.ObjectContext.EnsureConnection()
+   at System.Data.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Objects.ObjectQuery`1.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__1[TResult](IEnumerable`1 sequence)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[S](Expression expression)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source)
+   at SeedSpeak.BLL.MemberAction.FindUserIdByURL(String url) in C:\Users\MIcah\Desktop\SeedSpeak Web Final code\SeedSpeak Web Final code\SeedSpeak.BLL\MemberAction.cs:line 1268
+2012-10-02 17:37:01,902 [7388] MICAH-HP [(null)] ERROR File **********************
+2012-10-02 17:37:01,902 [7388] MICAH-HP [(null)] ERROR File The underlying provider failed on Open.
+2012-10-02 17:37:01,902 [7388] MICAH-HP [(null)] ERROR File    at System.Data.EntityClient.EntityConnection.OpenStoreConnectionIf(Boolean openCondition, DbConnection storeConnectionToOpen, DbConnection originalConnection, String exceptionCode, String attemptedOperation, Boolean& closeStoreConnectionOnFailure)
+   at System.Data.EntityClient.EntityConnection.Open()
+   at System.Data.Objects.ObjectContext.EnsureConnection()
+   at System.Data.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Objects.ObjectQuery`1.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__1[TResult](IEnumerable`1 sequence)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[S](Expression expression)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source)
+   at SeedSpeak.BLL.MemberAction.FindUserIdByURL(String url) in C:\Users\MIcah\Desktop\SeedSpeak Web Final code\SeedSpeak Web Final code\SeedSpeak.BLL\MemberAction.cs:line 1268
+2012-10-02 17:42:59,392 [1968] MICAH-HP [(null)] ERROR File **********************
+2012-10-02 17:42:59,423 [1968] MICAH-HP [(null)] ERROR File The underlying provider failed on Open.
+2012-10-02 17:42:59,439 [1968] MICAH-HP [(null)] ERROR File    at System.Data.EntityClient.EntityConnection.OpenStoreConnectionIf(Boolean openCondition, DbConnection storeConnectionToOpen, DbConnection originalConnection, String exceptionCode, String attemptedOperation, Boolean& closeStoreConnectionOnFailure)
+   at System.Data.EntityClient.EntityConnection.Open()
+   at System.Data.Objects.ObjectContext.EnsureConnection()
+   at System.Data.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Objects.ObjectQuery`1.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__1[TResult](IEnumerable`1 sequence)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[S](Expression expression)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source)
+   at SeedSpeak.BLL.MemberAction.FindUserIdByURL(String url) in C:\Users\MIcah\Desktop\SeedSpeak Web Final code\SeedSpeak Web Final code\SeedSpeak.BLL\MemberAction.cs:line 1268
+2012-10-10 11:52:36,291 [5520] MICAH-HP [(null)] ERROR File **********************
+2012-10-10 11:52:36,305 [5520] MICAH-HP [(null)] ERROR File The underlying provider failed on Open.
+2012-10-10 11:52:36,312 [5520] MICAH-HP [(null)] ERROR File    at System.Data.EntityClient.EntityConnection.OpenStoreConnectionIf(Boolean openCondition, DbConnection storeConnectionToOpen, DbConnection originalConnection, String exceptionCode, String attemptedOperation, Boolean& closeStoreConnectionOnFailure)
+   at System.Data.EntityClient.EntityConnection.Open()
+   at System.Data.Objects.ObjectContext.EnsureConnection()
+   at System.Data.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Objects.ObjectQuery`1.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__1[TResult](IEnumerable`1 sequence)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[S](Expression expression)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source)
+   at SeedSpeak.BLL.MemberAction.FindUserIdByURL(String url) in C:\Users\MIcah\Desktop\SeedSpeak Web Final code\SeedSpeak Web Final code\SeedSpeak.BLL\MemberAction.cs:line 1268
+2012-10-10 11:55:30,652 [6840] MICAH-HP [(null)] ERROR File **********************
+2012-10-10 11:55:30,652 [6840] MICAH-HP [(null)] ERROR File The underlying provider failed on Open.
+2012-10-10 11:55:30,653 [6840] MICAH-HP [(null)] ERROR File    at System.Data.EntityClient.EntityConnection.OpenStoreConnectionIf(Boolean openCondition, DbConnection storeConnectionToOpen, DbConnection originalConnection, String exceptionCode, String attemptedOperation, Boolean& closeStoreConnectionOnFailure)
+   at System.Data.EntityClient.EntityConnection.Open()
+   at System.Data.Objects.ObjectContext.EnsureConnection()
+   at System.Data.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Objects.ObjectQuery`1.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__1[TResult](IEnumerable`1 sequence)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[S](Expression expression)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source)
+   at SeedSpeak.BLL.MemberAction.FindUserIdByURL(String url) in C:\Users\MIcah\Desktop\SeedSpeak Web Final code\SeedSpeak Web Final code\SeedSpeak.BLL\MemberAction.cs:line 1268
+2012-10-10 11:59:19,565 [4388] MICAH-HP [(null)] ERROR File **********************
+2012-10-10 11:59:19,565 [4388] MICAH-HP [(null)] ERROR File The underlying provider failed on Open.
+2012-10-10 11:59:19,565 [4388] MICAH-HP [(null)] ERROR File    at System.Data.EntityClient.EntityConnection.OpenStoreConnectionIf(Boolean openCondition, DbConnection storeConnectionToOpen, DbConnection originalConnection, String exceptionCode, String attemptedOperation, Boolean& closeStoreConnectionOnFailure)
+   at System.Data.EntityClient.EntityConnection.Open()
+   at System.Data.Objects.ObjectContext.EnsureConnection()
+   at System.Data.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Objects.ObjectQuery`1.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__1[TResult](IEnumerable`1 sequence)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[S](Expression expression)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source)
+   at SeedSpeak.BLL.MemberAction.FindUserIdByURL(String url) in C:\Users\MIcah\Desktop\SeedSpeak Web Final code\SeedSpeak Web Final code\SeedSpeak.BLL\MemberAction.cs:line 1268
+2012-10-10 12:13:57,983 [7036] MICAH-HP [(null)] ERROR File **********************
+2012-10-10 12:13:57,983 [7036] MICAH-HP [(null)] ERROR File The underlying provider failed on Open.
+2012-10-10 12:13:57,985 [7036] MICAH-HP [(null)] ERROR File    at System.Data.EntityClient.EntityConnection.OpenStoreConnectionIf(Boolean openCondition, DbConnection storeConnectionToOpen, DbConnection originalConnection, String exceptionCode, String attemptedOperation, Boolean& closeStoreConnectionOnFailure)
+   at System.Data.EntityClient.EntityConnection.Open()
+   at System.Data.Objects.ObjectContext.EnsureConnection()
+   at System.Data.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Objects.ObjectQuery`1.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__1[TResult](IEnumerable`1 sequence)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[S](Expression expression)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source)
+   at SeedSpeak.BLL.MemberAction.FindUserIdByURL(String url) in C:\Users\MIcah\Desktop\SeedSpeak Web Final code\SeedSpeak Web Final code\SeedSpeak.BLL\MemberAction.cs:line 1268

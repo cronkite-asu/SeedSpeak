@@ -1,0 +1,75 @@
+﻿#container {
+	PADDING-BOTTOM: 4em; MARGIN: 2em auto 0px; PADDING-LEFT: 1em; WIDTH: 452px; PADDING-RIGHT: 1em; BACKGROUND: #fff; OVERFLOW: hidden; PADDING-TOP: 2em; -moz-border-radius: 10px; -webkit-border-radius: 10px; -moz-box-shadow: 1px 1px 10px #000; -webkit-box-shadow: 1px 1px 5px #000
+}
+.navigation-controls {
+	Z-INDEX: 1001; POSITION: relative; TEXT-ALIGN: center; PADDING-BOTTOM: 5px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; BACKGROUND: #fff; PADDING-TOP: 5px
+}
+.picture-slides-disabled {
+	COLOR: #eee
+}
+.picture-slides-container {
+	MARGIN-BOTTOM: 2em
+}
+.picture-slides-dimmed-background .navigation-controls {
+	-moz-border-radius: 0 0 5px 5px; -webkit-border-top-left-radius: 0; -webkit-border-top-right-radius: 0; -webkit-border-bottom-left-radius: 5px; -webkit-border-bottom-right-radius: 5px
+}
+.picture-slides-dimmed-background .picture-slides-image-text {
+	-moz-border-radius: 5px 5px 0 0; -webkit-border-top-left-radius: 5px; -webkit-border-top-right-radius: 5px; -webkit-border-bottom-left-radius: 0; -webkit-border-bottom-right-radius: 0
+}
+.picture-slides-fade-container {
+	Z-INDEX: 1002; POSITION: relative; OVERFLOW: hidden
+}
+.picture-slides-fade-container A {
+	TEXT-ALIGN: center; DISPLAY: block; MARGIN-BOTTOM: 10px; HEIGHT: 240px
+}
+.picture-slides-fade-container A IMG {
+	-moz-box-shadow: 5px 5px 10px #000; -webkit-box-shadow: 5px 5px 10px #000
+}
+.picture-slides-image-load-fail {
+	DISPLAY: none
+}
+.picture-slides-image-text {
+	Z-INDEX: 1001; POSITION: relative; TEXT-ALIGN: center; PADDING-BOTTOM: 10px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BACKGROUND: #fff; PADDING-TOP: 5px
+}
+.picture-slides-previous-image {
+	DISPLAY: none
+}
+.picture-slides-next-image {
+	DISPLAY: none
+}
+.picture-slides-start-slideshow {
+	DISPLAY: none
+}
+.picture-slides-stop-slideshow {
+	DISPLAY: none
+}
+.picture-slides-previous-image {
+	CURSOR: pointer
+}
+.picture-slides-next-image {
+	CURSOR: pointer
+}
+.picture-slides-start-slideshow {
+	CURSOR: pointer
+}
+.picture-slides-stop-slideshow {
+	CURSOR: pointer
+}
+.picture-slides-thumbnails {
+	LIST-STYLE-TYPE: none; MARGIN-TOP: 1em; OVERFLOW: hidden; LIST-STYLE-IMAGE: none
+}
+.picture-slides-thumbnails LI {
+	MARGIN: 0px 10px 5px 0px; WIDTH: 100px; FLOAT: left
+}
+.picture-slides-thumbnails LI IMG {
+	WIDTH: 100px
+}
+.picture-slides-thumbnails A {
+	OUTLINE-STYLE: none; OUTLINE-COLOR: invert; OUTLINE-WIDTH: medium
+}
+.picture-slides-thumbnails LI .picture-slides-selected-thumbnail IMG {
+	BORDER-BOTTOM: #000 1px solid; BORDER-LEFT: #000 1px solid; PADDING-BOTTOM: 2px; PADDING-LEFT: 2px; WIDTH: 92px; PADDING-RIGHT: 2px; BACKGROUND: #ea9d80; BORDER-TOP: #000 1px solid; BORDER-RIGHT: #000 1px solid; PADDING-TOP: 2px; -moz-border-radius: 5px; -webkit-border-radius: 5px
+}
+.picture-slides-dim-overlay {
+	Z-INDEX: 1000; POSITION: absolute; FILTER: progid:DXImageTransform.Microsoft.Alpha(Opacity=80); WIDTH: 100%; DISPLAY: none; BACKGROUND: #000; HEIGHT: 100%; TOP: 0px; LEFT: 0px; opacity: 0.8
+}

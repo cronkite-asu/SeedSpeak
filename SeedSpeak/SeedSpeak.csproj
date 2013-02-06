@@ -1,0 +1,722 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DB0597DC-D657-46F2-ABAB-383C16B75748}</ProjectGuid>
+    <ProjectTypeGuids>{F85E285D-A4E0-4152-9332-AB1D724D3325};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SeedSpeak</RootNamespace>
+    <AssemblyName>SeedSpeak</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Facebook, Version=3.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Facebook.dll</HintPath>
+    </Reference>
+    <Reference Include="Facebook.Web, Version=3.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Facebook.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="Facebook.Web.Mvc, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Facebook.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\..\..\lib\incubating-log4net-1.2.10\log4net-1.2.10\bin\net\2.0\release\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Recaptcha, Version=1.0.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\Shashank Shukla\Desktop\MvcReCaptchaSource\MvcReCaptcha\bin\Recaptcha.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Abstractions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Routing">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Telerik.Web.Mvc, Version=2010.2.825.235, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Telerik.Web.Mvc.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CaptchaValidatorAttribute.cs" />
+    <Compile Include="Captcha\Captcha.cs" />
+    <Compile Include="Captcha\CaptchaResult.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\CategoryController.cs" />
+    <Compile Include="Controllers\ErrorController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\MemberController.cs" />
+    <Compile Include="Controllers\SeedController.cs" />
+    <Compile Include="Controllers\SeedStreamController.cs" />
+    <Compile Include="Controllers\UserProfileController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\GenerateCaptcha.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="utils\badWordsFilter.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\common.css" />
+    <Content Include="Content\flexcroll.js" />
+    <Content Include="Content\flexcrollstyles.css" />
+    <Content Include="Content\galleria.classic.css" />
+    <Content Include="Content\HomeP2.css" />
+    <Content Include="Content\images\action0.png" />
+    <Content Include="Content\images\Actuinicons-sel.png" />
+    <Content Include="Content\images\Actuinicons.png" />
+    <Content Include="Content\images\addcatbtn.png" />
+    <Content Include="Content\images\addicon.png" />
+    <Content Include="Content\images\addsearch-box.png" />
+    <Content Include="Content\images\advbg.png" />
+    <Content Include="Content\images\ajaxloader.gif" />
+    <Content Include="Content\images\banner-add.png" />
+    <Content Include="Content\images\bdr.png" />
+    <Content Include="Content\images\bg-input00.png" />
+    <Content Include="Content\images\big_window_bottom.png" />
+    <Content Include="Content\images\big_window_middle.png" />
+    <Content Include="Content\images\big_window_top.png" />
+    <Content Include="Content\images\bluegrdent.png" />
+    <Content Include="Content\images\blue_shade.jpg" />
+    <Content Include="Content\images\bottombgp2.jpg" />
+    <Content Include="Content\images\bottombgp2.png" />
+    <Content Include="Content\images\brbtnL.png" />
+    <Content Include="Content\images\brbtnM.png" />
+    <Content Include="Content\images\brbtnR.png" />
+    <Content Include="Content\images\brLbtn.png" />
+    <Content Include="Content\images\browse-bg.png" />
+    <Content Include="Content\images\browse-search.png" />
+    <Content Include="Content\images\browse.png" />
+    <Content Include="Content\images\browse1.png" />
+    <Content Include="Content\images\btmcurve.png" />
+    <Content Include="Content\images\btn-edit.png" />
+    <Content Include="Content\images\btn-reply.png" />
+    <Content Include="Content\images\btncancel.png" />
+    <Content Include="Content\images\btndiscard.png" />
+    <Content Include="Content\images\btnfind.png" />
+    <Content Include="Content\images\btnfolow.png" />
+    <Content Include="Content\images\btnmore.png" />
+    <Content Include="Content\images\btnplant.png" />
+    <Content Include="Content\images\btnpost.png" />
+    <Content Include="Content\images\btnsetloc.png" />
+    <Content Include="Content\images\bubble.png" />
+    <Content Include="Content\images\bublearow.png" />
+    <Content Include="Content\images\calender.png" />
+    <Content Include="Content\images\calendertxtbox.gif" />
+    <Content Include="Content\images\captacha.jpg" />
+    <Content Include="Content\images\catarow.png" />
+    <Content Include="Content\images\catbg.png" />
+    <Content Include="Content\images\catbgl.png" />
+    <Content Include="Content\images\catbgm.png" />
+    <Content Include="Content\images\catbgr.png" />
+    <Content Include="Content\images\catbgr0.png" />
+    <Content Include="Content\images\catbtL.png" />
+    <Content Include="Content\images\catbtM.png" />
+    <Content Include="Content\images\catbtR.png" />
+    <Content Include="Content\images\catgo.png" />
+    <Content Include="Content\images\catL.png" />
+    <Content Include="Content\images\catM.png" />
+    <Content Include="Content\images\catR.png" />
+    <Content Include="Content\images\catselbg.png" />
+    <Content Include="Content\images\close.png" />
+    <Content Include="Content\images\close_pop.png" />
+    <Content Include="Content\images\clouds0.png" />
+    <Content Include="Content\images\content-bg-bottom.png" />
+    <Content Include="Content\images\content-bgmid.png" />
+    <Content Include="Content\images\content-bottom.png" />
+    <Content Include="Content\images\content-rounded-top.png" />
+    <Content Include="Content\images\contentpgheader0.jpg" />
+    <Content Include="Content\images\create-btn.png" />
+    <Content Include="Content\images\dashboard-bg.png" />
+    <Content Include="Content\images\dashMtitlebg.png" />
+    <Content Include="Content\images\dd.jpg" />
+    <Content Include="Content\images\ddlarow.png" />
+    <Content Include="Content\images\ddlbg.png" />
+    <Content Include="Content\images\defaultbg.png" />
+    <Content Include="Content\images\delcat.png" />
+    <Content Include="Content\images\delete-icon.png" />
+    <Content Include="Content\images\delete.png" />
+    <Content Include="Content\images\delupimg.png" />
+    <Content Include="Content\images\delupimg0.png" />
+    <Content Include="Content\images\delupimg1.png" />
+    <Content Include="Content\images\delupimg2.png" />
+    <Content Include="Content\images\descbg.png" />
+    <Content Include="Content\images\divide.png" />
+    <Content Include="Content\images\divider.png" />
+    <Content Include="Content\images\dividerbg.png" />
+    <Content Include="Content\images\DnextbtnP2.png" />
+    <Content Include="Content\images\Dnxtpager.png" />
+    <Content Include="Content\images\Dprepager.png" />
+    <Content Include="Content\images\DprevMbtnP2.png" />
+    <Content Include="Content\images\edit-delete.png" />
+    <Content Include="Content\images\editor.png" />
+    <Content Include="Content\images\enlarge1.png" />
+    <Content Include="Content\images\enlarge2.png" />
+    <Content Include="Content\images\exclamation.jpg" />
+    <Content Include="Content\images\faqbg.png" />
+    <Content Include="Content\images\faqbgpanbg.png" />
+    <Content Include="Content\images\fbookbtnbg.png" />
+    <Content Include="Content\images\flag.png" />
+    <Content Include="Content\images\flagbg.png" />
+    <Content Include="Content\images\garow.png" />
+    <Content Include="Content\images\gbtnxl.png" />
+    <Content Include="Content\images\gbtnxxl.png" />
+    <Content Include="Content\images\gfeedec_input.png" />
+    <Content Include="Content\images\ghuebg.png" />
+    <Content Include="Content\images\gmap.png" />
+    <Content Include="Content\images\go-gray.png" />
+    <Content Include="Content\images\go.png" />
+    <Content Include="Content\images\gobackbtn.png" />
+    <Content Include="Content\images\greenseed.png" />
+    <Content Include="Content\images\gridalt.png" />
+    <Content Include="Content\images\gridbg.png" />
+    <Content Include="Content\images\grid_altbg.png" />
+    <Content Include="Content\images\grid_bg.png" />
+    <Content Include="Content\images\headerbg.png" />
+    <Content Include="Content\images\headernew.jpg" />
+    <Content Include="Content\images\hide.png" />
+    <Content Include="Content\images\highlight-bg.png" />
+    <Content Include="Content\images\hometnbP2.png" />
+    <Content Include="Content\images\hometnbP21.png" />
+    <Content Include="Content\images\icons-bg.png" />
+    <Content Include="Content\images\images.png" />
+    <Content Include="Content\images\imgseed.png" />
+    <Content Include="Content\images\indexfotterbg.png" />
+    <Content Include="Content\images\infooter.jpg" />
+    <Content Include="Content\images\inputbgP2.png" />
+    <Content Include="Content\images\left.gif" />
+    <Content Include="Content\images\leftBrounded.png" />
+    <Content Include="Content\images\leftcontentbg.png" />
+    <Content Include="Content\images\like.png" />
+    <Content Include="Content\images\link.gif" />
+    <Content Include="Content\images\links.png" />
+    <Content Include="Content\images\listview.png" />
+    <Content Include="Content\images\location.png" />
+    <Content Include="Content\images\logbtn.png" />
+    <Content Include="Content\images\loginmainbg.png" />
+    <Content Include="Content\images\login_txtbox0.png" />
+    <Content Include="Content\images\macGL.png" />
+    <Content Include="Content\images\macGR.png" />
+    <Content Include="Content\images\mactGtab.png" />
+    <Content Include="Content\images\mactline.png" />
+    <Content Include="Content\images\mactWtab.png" />
+    <Content Include="Content\images\macWL.png" />
+    <Content Include="Content\images\macWR.png" />
+    <Content Include="Content\images\mailicon.png" />
+    <Content Include="Content\images\map-bdr-bg.png" />
+    <Content Include="Content\images\map-border.png" />
+    <Content Include="Content\images\mapP2.png" />
+    <Content Include="Content\images\mapSeedIcon.png" />
+    <Content Include="Content\images\mclose.png" />
+    <Content Include="Content\images\menu-bg-green-bottom.png" />
+    <Content Include="Content\images\menu-bg-green-top.png" />
+    <Content Include="Content\images\menu-bg.png" />
+    <Content Include="Content\images\menu-green-bg.png" />
+    <Content Include="Content\images\mid-saprater.png" />
+    <Content Include="Content\images\midbdybg.png" />
+    <Content Include="Content\images\midbgrepeat.png" />
+    <Content Include="Content\images\midbotP2.png" />
+    <Content Include="Content\images\midBrounded0.png" />
+    <Content Include="Content\images\midcenP2.png" />
+    <Content Include="Content\images\midhoverbg0.png" />
+    <Content Include="Content\images\midTopP2.png" />
+    <Content Include="Content\images\minitabconbg.png" />
+    <Content Include="Content\images\minitabgl.png" />
+    <Content Include="Content\images\minitabgl0.png" />
+    <Content Include="Content\images\minitabgr.png" />
+    <Content Include="Content\images\minitabwr.png" />
+    <Content Include="Content\images\mintabwl.png" />
+    <Content Include="Content\images\minus.gif" />
+    <Content Include="Content\images\minusPbox.png" />
+    <Content Include="Content\images\mobappbtn.jpg" />
+    <Content Include="Content\images\mobappbtn.png" />
+    <Content Include="Content\images\MsrchbgL.png" />
+    <Content Include="Content\images\Msrchbgm.png" />
+    <Content Include="Content\images\MsrchbgR.png" />
+    <Content Include="Content\images\nav-bg.png" />
+    <Content Include="Content\images\nav-stream-bg-mid.png" />
+    <Content Include="Content\images\nav-stream-bottom.png" />
+    <Content Include="Content\images\navB.png" />
+    <Content Include="Content\images\navbasebg.png" />
+    <Content Include="Content\images\navbg.png" />
+    <Content Include="Content\images\navmenubg.png" />
+    <Content Include="Content\images\navTbg.png" />
+    <Content Include="Content\images\next.png" />
+    <Content Include="Content\images\next1.png" />
+    <Content Include="Content\images\next3.png" />
+    <Content Include="Content\images\nextbtnP2.png" />
+    <Content Include="Content\images\nextPageArrow.gif" />
+    <Content Include="Content\images\nextPageArrowWhite.gif" />
+    <Content Include="Content\images\nextpagerP2.png" />
+    <Content Include="Content\images\noimage.png" />
+    <Content Include="Content\images\noimage_OLD.png" />
+    <Content Include="Content\images\notfound.png" />
+    <Content Include="Content\images\notification-bg-bottom.png" />
+    <Content Include="Content\images\notification-bg-middle.png" />
+    <Content Include="Content\images\notification-bg-top.png" />
+    <Content Include="Content\images\novideo.png" />
+    <Content Include="Content\images\novideo_OLD.png" />
+    <Content Include="Content\images\optbg.png" />
+    <Content Include="Content\images\pgbgp2.jpg" />
+    <Content Include="Content\images\plantboxbg.png" />
+    <Content Include="Content\images\plantbtmcurve.png" />
+    <Content Include="Content\images\plantgobtn.png" />
+    <Content Include="Content\images\plantseedbg.png" />
+    <Content Include="Content\images\plantseedL.png" />
+    <Content Include="Content\images\plantseedM.png" />
+    <Content Include="Content\images\plantseedR.png" />
+    <Content Include="Content\images\planttxtareabg.png" />
+    <Content Include="Content\images\plus.gif" />
+    <Content Include="Content\images\plusPbox.png" />
+    <Content Include="Content\images\prepagerP2.png" />
+    <Content Include="Content\images\prev.png" />
+    <Content Include="Content\images\prev1.png" />
+    <Content Include="Content\images\prev3.png" />
+    <Content Include="Content\images\prevMbtnP2.png" />
+    <Content Include="Content\images\prevPageArrow.gif" />
+    <Content Include="Content\images\prevPageArrowWhite.gif" />
+    <Content Include="Content\images\privacy_icon.gif" />
+    <Content Include="Content\images\profile.jpg" />
+    <Content Include="Content\images\profilebg.png" />
+    <Content Include="Content\images\ptextareabg.png" />
+    <Content Include="Content\images\Ptextbox.png" />
+    <Content Include="Content\images\rederror.png" />
+    <Content Include="Content\images\refresh.png" />
+    <Content Include="Content\images\reset.png" />
+    <Content Include="Content\images\right.gif" />
+    <Content Include="Content\images\rightboxbg.png" />
+    <Content Include="Content\images\rightBrounded.png" />
+    <Content Include="Content\images\rightcolbg.png" />
+    <Content Include="Content\images\rndB.png" />
+    <Content Include="Content\images\rndbotom.png" />
+    <Content Include="Content\images\rndbotom0.png" />
+    <Content Include="Content\images\rndbtm.png" />
+    <Content Include="Content\images\rndmbg.png" />
+    <Content Include="Content\images\rndmid.png" />
+    <Content Include="Content\images\rndT.png" />
+    <Content Include="Content\images\rndtop.png" />
+    <Content Include="Content\images\roundshadow.png" />
+    <Content Include="Content\images\rtglowbg.png" />
+    <Content Include="Content\images\rundbg.gif" />
+    <Content Include="Content\images\rundedshadow.png" />
+    <Content Include="Content\images\r_corner.png" />
+    <Content Include="Content\images\scroll-left.gif" />
+    <Content Include="Content\images\scroll-right.gif" />
+    <Content Include="Content\images\scrollcast.png" />
+    <Content Include="Content\images\seachfind.png" />
+    <Content Include="Content\images\search-bottom-bg.png" />
+    <Content Include="Content\images\search-img.png" />
+    <Content Include="Content\images\search-middle-bg.png" />
+    <Content Include="Content\images\search-top-bg.png" />
+    <Content Include="Content\images\search.png" />
+    <Content Include="Content\images\searchbg-C.png" />
+    <Content Include="Content\images\searchbg-L.png" />
+    <Content Include="Content\images\searchbg-R.png" />
+    <Content Include="Content\images\searchbg_stream.png" />
+    <Content Include="Content\images\searchinput.png" />
+    <Content Include="Content\images\search_stream.png" />
+    <Content Include="Content\images\search_stream0.png" />
+    <Content Include="Content\images\seedicon.png" />
+    <Content Include="Content\images\seedicon0.png" />
+    <Content Include="Content\images\seedLocPointer.png" />
+    <Content Include="Content\images\seedtitl.png" />
+    <Content Include="Content\images\seedtitle.png" />
+    <Content Include="Content\images\seedWshade.png" />
+    <Content Include="Content\images\selbgP2.png" />
+    <Content Include="Content\images\select-stream-bottom.png" />
+    <Content Include="Content\images\select-stream-middle.png" />
+    <Content Include="Content\images\select-stream-top.png" />
+    <Content Include="Content\images\selectbg.png" />
+    <Content Include="Content\images\selLbg.png" />
+    <Content Include="Content\images\selMbg.png" />
+    <Content Include="Content\images\selRbg.png" />
+    <Content Include="Content\images\sep.png" />
+    <Content Include="Content\images\seprater.gif" />
+    <Content Include="Content\images\setlocxl.png" />
+    <Content Include="Content\images\shade.gif" />
+    <Content Include="Content\images\shade.png" />
+    <Content Include="Content\images\shadedbg.png" />
+    <Content Include="Content\images\shadetop.png" />
+    <Content Include="Content\images\shadeW.gif" />
+    <Content Include="Content\images\shadeWbg.gif" />
+    <Content Include="Content\images\shadow.png" />
+    <Content Include="Content\images\shadowbg.png" />
+    <Content Include="Content\images\shadowbgW.png" />
+    <Content Include="Content\images\small-seeds-icon.png" />
+    <Content Include="Content\images\smallrnd.png" />
+    <Content Include="Content\images\smallrndB.png" />
+    <Content Include="Content\images\smallrndM.png" />
+    <Content Include="Content\images\small_window_bottom.png" />
+    <Content Include="Content\images\small_window_middle.png" />
+    <Content Include="Content\images\small_window_top.png" />
+    <Content Include="Content\images\socialicons-hover.gif" />
+    <Content Include="Content\images\socialicons.gif" />
+    <Content Include="Content\images\sortact.png" />
+    <Content Include="Content\images\sortbg.gif" />
+    <Content Include="Content\images\sortbgP2.png" />
+    <Content Include="Content\images\sorthover.jpg" />
+    <Content Include="Content\images\sprite.png" />
+    <Content Include="Content\images\spritebtmtile.gif" />
+    <Content Include="Content\images\spritef.png" />
+    <Content Include="Content\images\spritemobile.png" />
+    <Content Include="Content\images\spritetnb.png" />
+    <Content Include="Content\images\spriteWB.png" />
+    <Content Include="Content\images\sprite_frmbtn.png" />
+    <Content Include="Content\images\sprite_hf.png" />
+    <Content Include="Content\images\sprite_logincntrl.png" />
+    <Content Include="Content\images\sprite_logindot.png" />
+    <Content Include="Content\images\stats.png" />
+    <Content Include="Content\images\stream-nav-bg.png" />
+    <Content Include="Content\images\stream-nav-top.png" />
+    <Content Include="Content\images\stream-title-input.png" />
+    <Content Include="Content\images\subpgbg.jpg" />
+    <Content Include="Content\images\subpgbgp2.jpg" />
+    <Content Include="Content\images\subtnb.png" />
+    <Content Include="Content\images\sucess.gif" />
+    <Content Include="Content\images\tab-g.png" />
+    <Content Include="Content\images\tab-g0.png" />
+    <Content Include="Content\images\tab-w.png" />
+    <Content Include="Content\images\tab-w0.png" />
+    <Content Include="Content\images\tabbgwhite.gif" />
+    <Content Include="Content\images\tabcontbg.png" />
+    <Content Include="Content\images\tbgxl-g.png" />
+    <Content Include="Content\images\tbgxl-w.gif" />
+    <Content Include="Content\images\TbtnFol.png" />
+    <Content Include="Content\images\Tbtnmute.png" />
+    <Content Include="Content\images\TbtnUnfol.png" />
+    <Content Include="Content\images\textareabg.png" />
+    <Content Include="Content\images\textareabg0.png" />
+    <Content Include="Content\images\textareaxl.png" />
+    <Content Include="Content\images\Tgl.png" />
+    <Content Include="Content\images\TgR.png" />
+    <Content Include="Content\images\thinseedp2.gif" />
+    <Content Include="Content\images\thinseedp2.png" />
+    <Content Include="Content\images\tipbox.gif" />
+    <Content Include="Content\images\tnbbg.gif" />
+    <Content Include="Content\images\tnbbgp2.png" />
+    <Content Include="Content\images\tnbbgP2alt.png" />
+    <Content Include="Content\images\tnblogin.png" />
+    <Content Include="Content\images\tooltipbg.png" />
+    <Content Include="Content\images\topshade.png" />
+    <Content Include="Content\images\topshadep2.png" />
+    <Content Include="Content\images\tpbgL0.png" />
+    <Content Include="Content\images\transparent-searchbg.png" />
+    <Content Include="Content\images\transparent-searchbg1.png" />
+    <Content Include="Content\images\twr.png" />
+    <Content Include="Content\images\txt-area.png" />
+    <Content Include="Content\images\txtbgmap.png" />
+    <Content Include="Content\images\ucl.png" />
+    <Content Include="Content\images\uinputicons.png" />
+    <Content Include="Content\images\user-icon.jpg" />
+    <Content Include="Content\images\user.gif" />
+    <Content Include="Content\images\userinputbg.png" />
+    <Content Include="Content\images\vbar.png" />
+    <Content Include="Content\images\vediimg.jpg" />
+    <Content Include="Content\images\verticalbarbody.png" />
+    <Content Include="Content\images\video-bg-bottom.png" />
+    <Content Include="Content\images\video-bg-top.png" />
+    <Content Include="Content\images\video-img.png" />
+    <Content Include="Content\images\video.png" />
+    <Content Include="Content\images\WbgP2.png" />
+    <Content Include="Content\images\web_disIcons.png" />
+    <Content Include="Content\images\web_Icons.png" />
+    <Content Include="Content\images\wecome-input-bg.png" />
+    <Content Include="Content\images\whiteseed0.gif" />
+    <Content Include="Content\images\winstreambg.png" />
+    <Content Include="Content\jquery.autocomplete.css" />
+    <Content Include="Content\jquery.ui.all.css" />
+    <Content Include="Content\jquery.ui.core.css" />
+    <Content Include="Content\jquery.ui.datepicker.css" />
+    <Content Include="Content\jquery.ui.tabs.css" />
+    <Content Include="Content\picture-slides.css" />
+    <Content Include="Content\subpages.css" />
+    <Content Include="Content\telerik.common.min.css" />
+    <Content Include="Content\uc-style.css" />
+    <Content Include="Content\uniform.default.css" />
+    <Content Include="Global.asax" />
+    <Content Include="jcrop\crop.js" />
+    <Content Include="jcrop\jcrop.css" />
+    <Content Include="jcrop\jquery.form.js" />
+    <Content Include="jcrop\jquery.Jcrop.js" />
+    <Content Include="jcrop\tempImage\temp.png" />
+    <Content Include="jwPlayer\jwplayer.js" />
+    <Content Include="jwPlayer\license.txt" />
+    <Content Include="jwPlayer\player.swf" />
+    <Content Include="jwPlayer\preview.jpg" />
+    <Content Include="jwPlayer\readme.html" />
+    <Content Include="jwPlayer\SeedSpeakBanner.jpg" />
+    <Content Include="jwPlayer\swfobject.js" />
+    <Content Include="jwPlayer\yt.swf" />
+    <Content Include="Scripts\2010.2.825\jquery-1.4.2.min.js" />
+    <Content Include="Scripts\2010.2.825\jquery.validate.min.js" />
+    <Content Include="Scripts\2010.2.825\telerik.autocomplete.min.js" />
+    <Content Include="Scripts\2010.2.825\telerik.calendar.min.js" />
+    <Content Include="Scripts\2010.2.825\telerik.combobox.min.js" />
+    <Content Include="Scripts\2010.2.825\telerik.common.min.js" />
+    <Content Include="Scripts\2010.2.825\telerik.datepicker.min.js" />
+    <Content Include="Scripts\2010.2.825\telerik.draganddrop.min.js" />
+    <Content Include="Scripts\2010.2.825\telerik.editor.min.js" />
+    <Content Include="Scripts\2010.2.825\telerik.grid.editing.min.js" />
+    <Content Include="Scripts\2010.2.825\telerik.grid.filtering.min.js" />
+    <Content Include="Scripts\2010.2.825\telerik.grid.grouping.min.js" />
+    <Content Include="Scripts\2010.2.825\telerik.grid.min.js" />
+    <Content Include="Scripts\2010.2.825\telerik.grid.resizing.min.js" />
+    <Content Include="Scripts\2010.2.825\telerik.list.min.js" />
+    <Content Include="Scripts\2010.2.825\telerik.menu.min.js" />
+    <Content Include="Scripts\2010.2.825\telerik.panelbar.min.js" />
+    <Content Include="Scripts\2010.2.825\telerik.tabstrip.min.js" />
+    <Content Include="Scripts\2010.2.825\telerik.textbox.min.js" />
+    <Content Include="Scripts\2010.2.825\telerik.treeview.min.js" />
+    <Content Include="Scripts\2010.2.825\telerik.window.min.js" />
+    <Content Include="Scripts\accordion.js" />
+    <Content Include="Scripts\Common.js" />
+    <Content Include="Scripts\csspopup.js" />
+    <Content Include="Scripts\fbconnect.js" />
+    <Content Include="Scripts\galleria.classic.js" />
+    <Content Include="Scripts\galleria.js" />
+    <Content Include="Scripts\highlight.js" />
+    <Content Include="Scripts\infobox.js" />
+    <Content Include="Scripts\jquery.autocomplete.min.js" />
+    <Content Include="Scripts\jquery.autogrowtextarea.js" />
+    <Content Include="Scripts\jquery.curvycorners.min.js" />
+    <Content Include="Scripts\jquery.cycle.all.min.js" />
+    <Content Include="Scripts\jquery.cycle.lite.min.js" />
+    <Content Include="Scripts\jquery.cycle.min.js" />
+    <Content Include="Scripts\jquery.googlemaps1.01.js" />
+    <Content Include="Scripts\jquery.js" />
+    <Content Include="Scripts\jquery.MultiFile.js" />
+    <Content Include="Scripts\jquery.simpleMultiSelect.js" />
+    <Content Include="Scripts\jquery.smartTab.js" />
+    <Content Include="Scripts\jquery.ui.core.js" />
+    <Content Include="Scripts\jquery.ui.datepicker.js" />
+    <Content Include="Scripts\jquery.ui.tabs.js" />
+    <Content Include="Scripts\jquery.ui.widget.js" />
+    <Content Include="Scripts\jquery.uniform.js" />
+    <Content Include="Scripts\jquery.watermarkinput.js" />
+    <Content Include="Scripts\jqwatermark.js" />
+    <Content Include="Scripts\popup.js" />
+    <Content Include="utils\badWords.xml" />
+    <Content Include="Views\Admin\AdminDashboard.aspx" />
+    <Content Include="Views\Admin\ManageContent.aspx" />
+    <Content Include="Views\Admin\ManageSeeds.aspx" />
+    <Content Include="Views\Admin\ManageUser.aspx" />
+    <Content Include="Views\Admin\PolishContent.aspx" />
+    <Content Include="Views\Category\AddEditCategory.aspx" />
+    <Content Include="Views\Category\ManageCategory.aspx" />
+    <Content Include="Views\Error\UnexpectedError.aspx" />
+    <Content Include="Views\Home\Contact.aspx" />
+    <Content Include="Views\Home\FAQ.aspx" />
+    <Content Include="Views\Home\Feeds.aspx" />
+    <Content Include="Views\Home\HowItWorks.aspx" />
+    <Content Include="Views\Home\News.aspx" />
+    <Content Include="Views\Home\SearchSeeds.aspx" />
+    <Content Include="Views\Home\Streams.aspx" />
+    <Content Include="Views\Home\Team.aspx" />
+    <Content Include="Views\Home\WatchDemo.aspx" />
+    <Content Include="Views\Member\BlockedUsers.aspx" />
+    <Content Include="Views\Member\ChangePassword.aspx" />
+    <Content Include="Views\Member\FBUser.aspx" />
+    <Content Include="Views\Member\NewestNearby.aspx" />
+    <Content Include="Views\Member\People.aspx" />
+    <Content Include="Views\Member\TopPeople.aspx" />
+    <Content Include="Views\Member\xd_receiver.aspx" />
+    <Content Include="Views\SeedStream\FeedDetails.aspx" />
+    <Content Include="Views\SeedStream\ListFeeds.aspx" />
+    <Content Include="Views\SeedStream\ManageMyFeeds.aspx" />
+    <Content Include="Views\Seed\EditSeed.ascx" />
+    <Content Include="Views\Shared\AddtoStreamPartial.ascx" />
+    <Content Include="Views\Shared\AdvanceSearchPartial.ascx" />
+    <Content Include="Views\Shared\AuthenticationPartial.ascx" />
+    <Content Include="Views\Shared\CommentPartial.ascx" />
+    <Content Include="Views\Member\Dashboard.aspx" />
+    <Content Include="Views\Member\Default.aspx" />
+    <Content Include="Views\Member\ListMember.aspx" />
+    <Content Include="Views\Member\ListSeed.aspx" />
+    <Content Include="Views\Member\NewSeed.aspx" />
+    <Content Include="Views\Member\PasswordSent.aspx" />
+    <Content Include="Views\Member\Profile.aspx" />
+    <Content Include="Views\Member\SignUpThanks.aspx" />
+    <Content Include="Views\Member\UserDetail.aspx" />
+    <Content Include="Views\Member\VerifyAccount.aspx" />
+    <Content Include="Views\Member\XdReceiver.aspx" />
+    <Content Include="Views\SeedStream\AddStreamFeed.ascx" />
+    <Content Include="Views\SeedStream\ListStreams.aspx" />
+    <Content Include="Views\Seed\AddSeed.ascx" />
+    <Content Include="Views\Seed\AddSeed.aspx" />
+    <Content Include="Views\Seed\DiscoverSeed.aspx" />
+    <Content Include="Views\Seed\EditSeed.aspx" />
+    <Content Include="Views\Seed\ManageSeeds.aspx" />
+    <Content Include="Views\Seed\OfferSeedOwnership.aspx" />
+    <Content Include="Views\Seed\OwnershipDecision.aspx" />
+    <Content Include="Views\Seed\PlantError.aspx" />
+    <Content Include="Views\Seed\PlantSeed.aspx" />
+    <Content Include="Views\Seed\PlantSeedLocation.ascx" />
+    <Content Include="Views\Seed\PlantSeedNew.aspx" />
+    <Content Include="Views\Seed\ReplySeed.ascx" />
+    <Content Include="Views\Seed\SeedDetails.aspx" />
+    <Content Include="Views\Seed\SeedDetailsFB.aspx" />
+    <Content Include="Views\Seed\SeedInfo.ascx" />
+    <Content Include="Views\Seed\SeedLocation.aspx" />
+    <Content Include="Views\Seed\SeedResponse.aspx" />
+    <Content Include="Views\Seed\SetCategory.aspx" />
+    <Content Include="Views\Seed\ShareIdea.ascx" />
+    <Content Include="Views\Seed\UploadMedia.aspx" />
+    <Content Include="Views\Seed\UploadVedioMedia.aspx" />
+    <Content Include="Views\Shared\FlagSeedPartial.ascx" />
+    <Content Include="Views\Shared\GridViewPartial.ascx" />
+    <Content Include="Views\Shared\GridViewPartialVisitor.ascx" />
+    <Content Include="Views\Shared\GridViewPartialVisitorScripts.ascx" />
+    <Content Include="Views\Shared\LikePartial.ascx" />
+    <Content Include="Views\Shared\LoginWindowPartial.ascx" />
+    <Content Include="Views\Shared\StreamFeed.ascx" />
+    <Content Include="Views\Shared\StreamHomeMini.ascx" />
+    <Content Include="Views\Shared\StreamMini.ascx" />
+    <Content Include="Views\UserProfile\NotFound.aspx" />
+    <Content Include="Views\UserProfile\ViewMyProfile.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Content\Site.css" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\MicrosoftAjax.js" />
+    <Content Include="Scripts\MicrosoftAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcValidation.js" />
+    <Content Include="Scripts\MicrosoftMvcValidation.debug.js" />
+    <Content Include="Views\Home\About.aspx" />
+    <Content Include="Views\Home\Index.aspx" />
+    <Content Include="Views\Shared\Error.aspx" />
+    <Content Include="Views\Shared\LogOnUserControl.ascx" />
+    <Content Include="Views\Shared\Site.Master" />
+    <Content Include="Views\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="UploadedMedia\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="log4net.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SeedSpeak.BLL\SeedSpeak.BLL.csproj">
+      <Project>{5BC27EA2-8A01-4EB4-9643-8A47E944E44B}</Project>
+      <Name>SeedSpeak.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SeedSpeak.Data\SeedSpeak.Data.csproj">
+      <Project>{8B339921-7EA8-4E72-8FA6-6DA12A34CB1D}</Project>
+      <Name>SeedSpeak.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SeedSpeak.Model\SeedSpeak.Model.csproj">
+      <Project>{8E42E189-5BAB-4CC4-A667-499466571B99}</Project>
+      <Name>SeedSpeak.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SeedSpeak.Util\SeedSpeak.Util.csproj">
+      <Project>{DFA8EB97-1DFE-4099-A998-CA9642BC3BAD}</Project>
+      <Name>SeedSpeak.Util</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="jwPlayer\chrome.zip" />
+    <Content Include="jwPlayer\eleganttwilight.zip" />
+    <None Include="jwPlayer\video.mp4" />
+    <Content Include="jwPlayer\whotube.zip" />
+    <None Include="SeedSpeakMail.properties" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target> -->
+  <Target Name="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(ProjectDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>53748</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
